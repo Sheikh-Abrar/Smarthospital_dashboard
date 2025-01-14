@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js?ver=6.2.2"
+        id="particle-js-js"></script>
+    <title>Document</title>
+</head>
+
+<body style="position: relative;">
+    <div class="main-Box container-fluid px-0">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>Smart Hospital</h1>
+                <div class="togler-btn">
+                    <i class="fa-solid fa-angles-left"></i>
+                </div>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="dropdown active">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/medicine-book_9597095 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">RTT Pathways</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/checklist_medical_healthcare_pen_clipboard_clipchart_icon_142002 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Clinical Coding</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/patient_2355692 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">OutPatient</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/share_4837049 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">E-Referral Service</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/medical-mask_3304431 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Master Patient Index</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/examination_12772954 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Waiting List</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/patient_2621786 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Inpatient</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Admit Patient from MPI</a>
+                        <a href="#">Active Patient Monitoring</a>
+                        <a href="#">Pending Admission List</a>
+                        <a href="#">View Patient by Ward</a>
+                        <a href="#">Bed Availability</a>
+                        <a href="#">Ward Diary</a>
+                        <a href="#">Bed Reservation</a>
+                        <a href="#">Admission Requests</a>
+                        <a href="#">View Recent Inpatient</a>
+                        <a href="#">View Ward Attenders</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/zoom_4660956 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Casenote Tracking</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/ambulance_2894975 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Emergency Care</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/medical-record_4914828 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Document Manage</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/doctor_709094 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Bluespier Theater</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/medical-result_2804593 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Reporting</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <!-- Repeat the above <li> for more dropdowns -->
+            </ul>
+        </aside>
+        <div class="mobile-menu">
+            <div class="menu-header">
+                <h1>Smart Hospital</h1>
+                <i class="fa-solid fa-arrow-left close-mobile-menu"></i>
+            </div>
+            <div class="menu-links-main">
+                <ul class="menu-links">
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Billing Appoinment</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Appointments</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>OPD Out-Patient</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>IPD In patient</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Pharmacy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Pathology</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Radiology</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Blood Bank</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Ambulance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Front Office</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Birth & Date Record</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Human Resource</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Referrals</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>TPA Management</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Finance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Messages</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <main class="main-content">
+            <header class="topbar">
+                <div class="mobile-togler">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="user-profile">
+                    <div class="notification">
+                        <img src="../assets/images/Vector (7).png" alt="">
+                        <span>0</span>
+                    </div>
+                    <div class="profile-pic">
+
+                        <img src="../assets/images/Photo.png" alt="User">
+                    </div>
+                    <div class="dropdow-main">
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Sub-link 1</a></li>
+                        <li><a href="#">Sub-link 2</a></li>
+                        <li><a href="#">Sub-link 3</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="content">
+                <div class="container-fluid">
+   
+                        <div class="row overflow-hidden">
+                            <div class="col-12 px-0">
+                                <div class="login-user">
+                                    <h6>Login User</h6>
+                                    <p>Last Logged on at: 26-Apr-2024 19:45  </p>
+                                    <div class="login-user-detail-main">
+                                        <div class="login-user-image">
+                                            <img src="../assets/images/Rectangle 1092.png" alt="">
+                                        </div>
+                                        <div class="login-user-detail">
+                                            <h6>UGWU, Schima</h6>
+                                            <p>System: <span>Live</span></p>
+                                            <p>Organisation: <span>The Shrewsbury</span></p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="view-department-main">
+                        <div class="view-dep-head">
+                            <div class="view-dep-filter-sec">
+                                <label for="">Patients by Area</label>
+                                <div class="triage-stream-dropdown" id="specific-id">
+                                    <div class="dropdown-button">
+                                        Select an option
+                                        <i class="fa fa-angle-down"></i> <!-- Font Awesome icon for down-angle -->
+                                    </div>
+                                    <ul class="dropdown-content">
+                                        <li>ARA PRH</li>
+                                        <li>Majors PRH</li>
+                                        <li>WR PRH</li>
+                                        <li>F2S PRH</li>
+                                        <li>Corridor PRH</li>
+                                        <li>Ambulance PRH</li>
+                                        <li>UTC PRH</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- <div class="view-dep-record-sec">
+                                <div class="view-dep-record-sec-col">
+                                    <img src="../assets/images/Group 1261153031 (1).png" alt="">
+                                    <p>Patients in Department: 456</p>
+                                </div>
+                                <div class="view-dep-record-sec-col">
+                                    <img src="../assets/images/Group 1261153031 (1).png" alt="">
+                                    <p>88 Results Found</p>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="table-main">
+                            <div class="table-container">
+                                <table class="professional-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Location</th>
+                                            <th>Name</th>
+                                            <th>Gender</th>
+                                            <th>Casualty No.</th>
+                                            <th>Nurse</th>
+                                            <th>Clinician</th>
+                                            <th>Assessment Time</th>
+                                            <th>Senior Review</th>
+                                            <th>Complaint</th>
+                                            <th>Referral</th>
+                                            <th>Results</th>
+                                            <th>Orders</th>
+                                            <th>Triage Target</th>
+                                            <th>Treatment</th>
+                                            <th>Outcome / Plan</th>
+                                            <th>Target Time</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                        <tr class="section-header">
+                                            <td colspan="22"><button><i class="fa-solid fa-minus"></i></button> RESUS RSH (3 Patients)</td>
+                                        </tr>
+                                      
+                                            <tr>
+                                                <td>WR PRH</td>
+                                                <td>Jones</td>
+                                                <td>Male</td>
+                                                <td>27042024</td>
+                                                <td>Nurse</td>
+                                                <td>Osha</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>Injury</td>
+                                                <td>0 Hr 26</td>
+                                                <td>Acute</td>
+                                                <td>THOMAS, Suniwali</td>
+                                                <td>FRAIL; ADMIT</td>
+                                                <td>26-Apr-20</td>
+                                                <td>Accute Me...</td>
+                                                <td>10:06</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>WR PRH</td>
+                                                <td>Jones</td>
+                                                <td>Male</td>
+                                                <td>27042024</td>
+                                                <td>Nurse</td>
+                                                <td>Osha</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>Injury</td>
+                                                <td>0 Hr 26</td>
+                                                <td>Acute</td>
+                                                <td>THOMAS, Suniwali</td>
+                                                <td>FRAIL; ADMIT</td>
+                                                <td>26-Apr-20</td>
+                                                <td>Accute Me...</td>
+                                                <td>10:06</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>WR PRH</td>
+                                                <td>Jones</td>
+                                                <td>Male</td>
+                                                <td>27042024</td>
+                                                <td>Nurse</td>
+                                                <td>Osha</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>Injury</td>
+                                                <td>0 Hr 26</td>
+                                                <td>Acute</td>
+                                                <td>THOMAS, Suniwali</td>
+                                                <td>FRAIL; ADMIT</td>
+                                                <td>26-Apr-20</td>
+                                                <td>Accute Me...</td>
+                                                <td>10:06</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>WR PRH</td>
+                                                <td>Jones</td>
+                                                <td>Male</td>
+                                                <td>27042024</td>
+                                                <td>Nurse</td>
+                                                <td>Osha</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>Injury</td>
+                                                <td>0 Hr 26</td>
+                                                <td>Acute</td>
+                                                <td>THOMAS, Suniwali</td>
+                                                <td>FRAIL; ADMIT</td>
+                                                <td>26-Apr-20</td>
+                                                <td>Accute Me...</td>
+                                                <td>10:06</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>WR PRH</td>
+                                                <td>Jones</td>
+                                                <td>Male</td>
+                                                <td>27042024</td>
+                                                <td>Nurse</td>
+                                                <td>Osha</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>Injury</td>
+                                                <td>0 Hr 26</td>
+                                                <td>Acute</td>
+                                                <td>THOMAS, Suniwali</td>
+                                                <td>FRAIL; ADMIT</td>
+                                                <td>26-Apr-20</td>
+                                                <td>Accute Me...</td>
+                                                <td>10:06</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>WR PRH</td>
+                                                <td>Jones</td>
+                                                <td>Male</td>
+                                                <td>27042024</td>
+                                                <td>Nurse</td>
+                                                <td>Osha</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>Injury</td>
+                                                <td>0 Hr 26</td>
+                                                <td>Acute</td>
+                                                <td>THOMAS, Suniwali</td>
+                                                <td>FRAIL; ADMIT</td>
+                                                <td>26-Apr-20</td>
+                                                <td>Accute Me...</td>
+                                                <td>10:06</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>WR PRH</td>
+                                                <td>Jones</td>
+                                                <td>Male</td>
+                                                <td>27042024</td>
+                                                <td>Nurse</td>
+                                                <td>Osha</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>Injury</td>
+                                                <td>0 Hr 26</td>
+                                                <td>Acute</td>
+                                                <td>THOMAS, Suniwali</td>
+                                                <td>FRAIL; ADMIT</td>
+                                                <td>26-Apr-20</td>
+                                                <td>Accute Me...</td>
+                                                <td>10:06</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>WR PRH</td>
+                                                <td>Jones</td>
+                                                <td>Male</td>
+                                                <td>27042024</td>
+                                                <td>Nurse</td>
+                                                <td>Osha</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>Injury</td>
+                                                <td>0 Hr 26</td>
+                                                <td>Acute</td>
+                                                <td>THOMAS, Suniwali</td>
+                                                <td>FRAIL; ADMIT</td>
+                                                <td>26-Apr-20</td>
+                                                <td>Accute Me...</td>
+                                                <td>10:06</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>WR PRH</td>
+                                                <td>Jones</td>
+                                                <td>Male</td>
+                                                <td>27042024</td>
+                                                <td>Nurse</td>
+                                                <td>Osha</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>Injury</td>
+                                                <td>0 Hr 26</td>
+                                                <td>Acute</td>
+                                                <td>THOMAS, Suniwali</td>
+                                                <td>FRAIL; ADMIT</td>
+                                                <td>26-Apr-20</td>
+                                                <td>Accute Me...</td>
+                                                <td>10:06</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>WR PRH</td>
+                                                <td>Jones</td>
+                                                <td>Male</td>
+                                                <td>27042024</td>
+                                                <td>Nurse</td>
+                                                <td>Osha</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>Injury</td>
+                                                <td>0 Hr 26</td>
+                                                <td>Acute</td>
+                                                <td>THOMAS, Suniwali</td>
+                                                <td>FRAIL; ADMIT</td>
+                                                <td>26-Apr-20</td>
+                                                <td>Accute Me...</td>
+                                                <td>10:06</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>WR PRH</td>
+                                                <td>Jones</td>
+                                                <td>Male</td>
+                                                <td>27042024</td>
+                                                <td>Nurse</td>
+                                                <td>Osha</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>Injury</td>
+                                                <td>0 Hr 26</td>
+                                                <td>Acute</td>
+                                                <td>THOMAS, Suniwali</td>
+                                                <td>FRAIL; ADMIT</td>
+                                                <td>26-Apr-20</td>
+                                                <td>Accute Me...</td>
+                                                <td>10:06</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>WR PRH</td>
+                                                <td>Jones</td>
+                                                <td>Male</td>
+                                                <td>27042024</td>
+                                                <td>Nurse</td>
+                                                <td>Osha</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>Injury</td>
+                                                <td>0 Hr 26</td>
+                                                <td>Acute</td>
+                                                <td>THOMAS, Suniwali</td>
+                                                <td>FRAIL; ADMIT</td>
+                                                <td>26-Apr-20</td>
+                                                <td>Accute Me...</td>
+                                                <td>10:06</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>WR PRH</td>
+                                                <td>Jones</td>
+                                                <td>Male</td>
+                                                <td>27042024</td>
+                                                <td>Nurse</td>
+                                                <td>Osha</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>27-Apr 18:13</td>
+                                                <td>Injury</td>
+                                                <td>0 Hr 26</td>
+                                                <td>Acute</td>
+                                                <td>THOMAS, Suniwali</td>
+                                                <td>FRAIL; ADMIT</td>
+                                                <td>26-Apr-20</td>
+                                                <td>Accute Me...</td>
+                                                <td>10:06</td>
+                                                
+                                            </tr>
+                                           
+                                         
+                                
+                                        <!-- Add more rows as needed -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Dropdown menu -->
+                        <div id="table-dropdown-menu" class="table-dropdown-menu">
+                            <ul>
+                                <li>Soft Clinical Notes</li>
+                                <li>Edit Incident Details</li>
+                                <li>Clinical Review Note Template</li>
+                                <li>Triage Patient</li>
+                                <li>View Triage Details</li>
+                                <li>See Patient</li>
+                                <li>Track within Department</li>
+                                <li>Record Clinical Details</li>
+                                <li>Refer</li>
+                                <li>Record ECG</li>
+                                <li>Discharge</li>
+                                <li>Ready to Proceed</li>
+                                <li>View Attendance</li>
+                                <li>Edit Patient</li>
+                                <li>Call Patient</li>
+                                <li>Consultant Sign off</li>
+                                <li>Set maximum result</li>
+                                <li>Outcome Plan</li>
+                                <li>Nurse Action</li>
+                                <li>Assign Primary Details</li>
+                                <li>Generate Communication</li>
+                                <li>View Communication</li>
+                                <li>Print QR</li>
+                                <li>Assign Bed Number</li>
+                                <li>Add Clinical Notes</li>
+                                <li>View Clinical Notes</li>
+                            </ul>
+                        </div>
+
+
+                        <!-- <div class="triange-detail-popup-main">
+                            <div class="triange-detail-popup">
+                                <div class="triange-detail-popup-head">
+                                    <h6>LANT, Jonathan (MR), 28-Nov-1974-Triage Details </h6>
+                                    <i class="fa-solid fa-xmark triage-closeBtn"></i>
+                                </div>
+                                <div class="popup-view-department-main">
+                                    <div class="popup-view-department-head">
+
+                                        <h6>View Department</h6>
+                                     <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                    <div class="popup-view-department-feilds">
+                                        <label for="">Daily Consultan</label>
+                                        <div class="dropdown-container" style="width: 50%;">
+                                            <select id="status">
+                                                <option value="status-change">HORN, Andrew (Dr)</option>
+                                                <option value="status-1">Status 1</option>
+                                                <option value="status-2">Status 2</option>
+                                                <option value="status-3">Status 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popup-incident-detail-main">
+                                    <div class="popup-incident-detail-head">
+
+                                        <h6>Incident Detail</h6>
+                                     <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                    <div class="popup-incident-detail-feilds">
+                                        <label for="">Daily Consultan</label>
+                                        <div class="popup-incident-detail-feilds-col">
+                                            <input type="date" name="" id="">
+                                            <div class="dropdown-container">
+                                                <select id="status">
+                                                    <option value="status-change">15:12</option>
+                                                    <option value="status-1">Status 1</option>
+                                                    <option value="status-2">Status 2</option>
+                                                    <option value="status-3">Status 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="popup-incident-detail-feilds">
+                                        <label for="">Arrival Time</label>
+                                        <div class="popup-incident-detail-feilds-col">
+                                            <input type="date" name="" id="">
+                                            <div class="dropdown-container">
+                                                <select id="status">
+                                                    <option value="status-change">17:12</option>
+                                                    <option value="status-1">Status 1</option>
+                                                    <option value="status-2">Status 2</option>
+                                                    <option value="status-3">Status 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="popup-incident-detail-feilds">
+                                        <label for="">Initial Assessment Time</label>
+                                        <div class="popup-incident-detail-feilds-col">
+                                            <input type="date" name="" id="">
+                                            <div class="dropdown-container">
+                                                <select id="status">
+                                                    <option value="status-change">17:12</option>
+                                                    <option value="status-1">Status 1</option>
+                                                    <option value="status-2">Status 2</option>
+                                                    <option value="status-3">Status 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="container-fluid">
+                                        <div class="row px-0">
+                                            <div class="col-lg-6 px-0">
+                                                <div class="triage-detail-sec-main">
+                                                    <div class="triage-detail-head">
+                                                        <h6>Triage Time</h6>
+                                                    </div>
+                                                    <div class="triage-detail-feilds">
+                                                        <label for="">Triage Time</label>
+                                                        <div class="triage-detail-feilds-col">
+                                                            <input type="date" name="" id="">
+                                                            <div class="dropdown-container">
+                                                                <select id="status">
+                                                                    <option value="status-change">17:12</option>
+                                                                    <option value="status-1">Status 1</option>
+                                                                    <option value="status-2">Status 2</option>
+                                                                    <option value="status-3">Status 3</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                    
+                                                    </div>
+                                                    <div class="triage-detail-feilds">
+                                                        <label for="">By</label>
+                                                        <div class="dropdown-container">
+                                                            <select id="status">
+                                                                <option value="status-change"></option>
+                                                                <option value="status-1">Status 1</option>
+                                                                <option value="status-2">Status 2</option>
+                                                                <option value="status-3">Status 3</option>
+                                                            </select>
+                                                        </div>
+                                                        <label for="">Presenting Complaint</label>
+                                                        <div class="dropdown-container">
+                                                            <select id="status">
+                                                                <option value="status-change">Illness</option>
+                                                                <option value="status-1">Status 1</option>
+                                                                <option value="status-2">Status 2</option>
+                                                                <option value="status-3">Status 3</option>
+                                                            </select>
+                                                        </div>
+                                                    
+                                                    
+                                                    </div>
+                                                    <div class="triage-detail-feilds">
+                                                        <div class="triage-detail-feilds-col">
+                                                            <div style="width: 100%;">
+                                                                <label for="">Chief Complaint</label>
+                                                                <div class="dropdown-container">
+                                                                    <select id="status">
+                                                                        <option value="status-change">Gastrointestinal</option>
+                                                                        <option value="status-1">Status 1</option>
+                                                                        <option value="status-2">Status 2</option>
+                                                                        <option value="status-3">Status 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div style="width: 100%;">
+                                                                <label for="">Description</label>
+                                                                <div class="dropdown-container">
+                                                                    <select id="status">
+                                                                        <option value="status-change">Abdominal Pain</option>
+                                                                        <option value="status-1">Status 1</option>
+                                                                        <option value="status-2">Status 2</option>
+                                                                        <option value="status-3">Status 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                    
+                                                    </div>
+                                                    <div class="triage-detail-feilds">
+                                                        <label for="">Triage Time</label>
+                                                        <textarea name="" id=""  rows="3" placeholder="Enter your messaage..."></textarea>
+                                    
+                                                    </div>
+                                                    <div class="triage-detail-feilds">
+                                                        <div class="triage-detail-feilds-col">
+                                                            <div style="width: 100%;">
+                                                                <label for="">MTS Complaint</label>
+                                                                <div class="dropdown-container">
+                                                                    <select id="status">
+                                                                        <option value="status-change">Abdominal Pain in Adults</option>
+                                                                        <option value="status-1">Status 1</option>
+                                                                        <option value="status-2">Status 2</option>
+                                                                        <option value="status-3">Status 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div style="width: 100%;">
+                                                                <label for="">Discriminator</label>
+                                                                <div class="dropdown-container">
+                                                                    <select id="status">
+                                                                        <option value="status-change">Vomiting Blood</option>
+                                                                        <option value="status-1">Status 1</option>
+                                                                        <option value="status-2">Status 2</option>
+                                                                        <option value="status-3">Status 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="triage-detail-feilds-col">
+                                                            <div style="width: 100%;">
+                                                                <label for="">MTS Category</label>
+                                                                <input type="text" name="" placeholder="2 : 2 Very Urgent" id="">
+                                                            </div>
+                                                            <div style="width: 100%;">
+                                                                <label for="">MTS Pain</label>
+                                                                <div class="dropdown-container">
+                                                                    <select id="status">
+                                                                        <option value="status-change">8-very bad, Severe</option>
+                                                                        <option value="status-1">Status 1</option>
+                                                                        <option value="status-2">Status 2</option>
+                                                                        <option value="status-3">Status 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="triage-detail-feilds">
+                                                        <label for="">Triage Stream</label>
+                                                        <div class="triage-stream-dropdown">
+                                                            <div class="dropdown-button">
+                                                                Select an option
+                                                                <i class="fa fa-angle-down"></i> 
+                                                            </div>
+                                                            <ul class="dropdown-content">
+                                                                <li>Majors</li>
+                                                                <li>Resus</li>
+                                                                <li>UTC</li>
+                                                            </ul>
+                                                        </div>
+                                                                  
+                                                        
+                                                    </div>
+                                                    <div class="triage-detail-feilds">
+                                                        <label for="">Triage Time</label>
+                                                        <textarea name="" id=""  rows="3" placeholder="Enter your messaage..."></textarea>
+                                    
+                                                    </div>
+                                                    <div class="triage-detail-sec-Btnmain">
+                                                        <button>Clinical Notes</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="medical-history-sec-main">
+                                                    <div class="medical-history-head">
+                                                        <h6>Medical History</h6>
+                                                    </div>
+                                                    <div class="medical-history-feilds-main">
+                                                        <div class="medical-tabs-btn">
+                                                            <button>Current</button>
+                                                            <button>Past</button>
+                                                        </div>
+                                                        <div class="medical-history-feilds">
+                                                            <div class="checkbox-wrapper-28">
+                                                                <input id="tmp-28" type="checkbox" class="promoted-input-checkbox"/>
+                                                                <svg><use xlink:href="#checkmark-28"/></svg>
+                                                                <label for="tmp-28">
+                                                                  Checkbox   
+                                                                </label>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                                                                  <symbol id="checkmark-28" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-miterlimit="10" fill="none"  d="M22.9 3.7l-15.2 16.6-6.6-7.1">
+                                                                    </path>
+                                                                  </symbol>
+                                                                </svg>
+                                                              </div>
+                                                            <div class="checkbox-wrapper-28">
+                                                                <input id="tmp-29" type="checkbox" class="promoted-input-checkbox"/>
+                                                                <svg><use xlink:href="#checkmark-29"/></svg>
+                                                                <label for="tmp-29">
+                                                                  Checkbox   
+                                                                </label>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                                                                  <symbol id="checkmark-29" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-miterlimit="10" fill="none"  d="M22.9 3.7l-15.2 16.6-6.6-7.1">
+                                                                    </path>
+                                                                  </symbol>
+                                                                </svg>
+                                                              </div>
+                                                            <div class="checkbox-wrapper-28">
+                                                                <input id="tmp-30" type="checkbox" class="promoted-input-checkbox"/>
+                                                                <svg><use xlink:href="#checkmark-30"/></svg>
+                                                                <label for="tmp-30">
+                                                                  Checkbox   
+                                                                </label>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                                                                  <symbol id="checkmark-30" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-miterlimit="10" fill="none"  d="M22.9 3.7l-15.2 16.6-6.6-7.1">
+                                                                    </path>
+                                                                  </symbol>
+                                                                </svg>
+                                                              </div>
+                                                            <div class="checkbox-wrapper-28">
+                                                                <input id="tmp-31" type="checkbox" class="promoted-input-checkbox"/>
+                                                                <svg><use xlink:href="#checkmark-30"/></svg>
+                                                                <label for="tmp-31">
+                                                                  Checkbox   
+                                                                </label>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                                                                  <symbol id="checkmark-31" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-miterlimit="10" fill="none"  d="M22.9 3.7l-15.2 16.6-6.6-7.1">
+                                                                    </path>
+                                                                  </symbol>
+                                                                </svg>
+                                                              </div>
+                                                            <div class="checkbox-wrapper-28">
+                                                                <input id="tmp-32" type="checkbox" class="promoted-input-checkbox"/>
+                                                                <svg><use xlink:href="#checkmark-30"/></svg>
+                                                                <label for="tmp-32">
+                                                                  Checkbox   
+                                                                </label>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                                                                  <symbol id="checkmark-32" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-miterlimit="10" fill="none"  d="M22.9 3.7l-15.2 16.6-6.6-7.1">
+                                                                    </path>
+                                                                  </symbol>
+                                                                </svg>
+                                                              </div>
+                                                            <div class="checkbox-wrapper-28">
+                                                                <input id="tmp-33" type="checkbox" class="promoted-input-checkbox"/>
+                                                                <svg><use xlink:href="#checkmark-30"/></svg>
+                                                                <label for="tmp-33">
+                                                                  Checkbox   
+                                                                </label>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                                                                  <symbol id="checkmark-33" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-miterlimit="10" fill="none"  d="M22.9 3.7l-15.2 16.6-6.6-7.1">
+                                                                    </path>
+                                                                  </symbol>
+                                                                </svg>
+                                                              </div>
+                                                            <div class="checkbox-wrapper-28">
+                                                                <input id="tmp-34" type="checkbox" class="promoted-input-checkbox"/>
+                                                                <svg><use xlink:href="#checkmark-30"/></svg>
+                                                                <label for="tmp-34">
+                                                                  Checkbox   
+                                                                </label>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                                                                  <symbol id="checkmark-34" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-miterlimit="10" fill="none"  d="M22.9 3.7l-15.2 16.6-6.6-7.1">
+                                                                    </path>
+                                                                  </symbol>
+                                                                </svg>
+                                                              </div>
+                                                            <div class="checkbox-wrapper-28">
+                                                                <input id="tmp-35" type="checkbox" class="promoted-input-checkbox"/>
+                                                                <svg><use xlink:href="#checkmark-30"/></svg>
+                                                                <label for="tmp-35">
+                                                                  Checkbox   
+                                                                </label>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                                                                  <symbol id="checkmark-35" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-miterlimit="10" fill="none"  d="M22.9 3.7l-15.2 16.6-6.6-7.1">
+                                                                    </path>
+                                                                  </symbol>
+                                                                </svg>
+                                                              </div>
+                                                            <div class="checkbox-wrapper-28">
+                                                                <input id="tmp-36" type="checkbox" class="promoted-input-checkbox"/>
+                                                                <svg><use xlink:href="#checkmark-30"/></svg>
+                                                                <label for="tmp-36">
+                                                                  Checkbox   
+                                                                </label>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                                                                  <symbol id="checkmark-36" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-miterlimit="10" fill="none"  d="M22.9 3.7l-15.2 16.6-6.6-7.1">
+                                                                    </path>
+                                                                  </symbol>
+                                                                </svg>
+                                                              </div>
+                                                            <div class="checkbox-wrapper-28">
+                                                                <input id="tmp-37" type="checkbox" class="promoted-input-checkbox"/>
+                                                                <svg><use xlink:href="#checkmark-30"/></svg>
+                                                                <label for="tmp-37">
+                                                                  Checkbox   
+                                                                </label>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                                                                  <symbol id="checkmark-37" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-miterlimit="10" fill="none"  d="M22.9 3.7l-15.2 16.6-6.6-7.1">
+                                                                    </path>
+                                                                  </symbol>
+                                                                </svg>
+                                                              </div>
+                                                            <div class="checkbox-wrapper-28">
+                                                                <input id="tmp-38" type="checkbox" class="promoted-input-checkbox"/>
+                                                                <svg><use xlink:href="#checkmark-30"/></svg>
+                                                                <label for="tmp-38">
+                                                                  Checkbox   
+                                                                </label>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                                                                  <symbol id="checkmark-38" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-miterlimit="10" fill="none"  d="M22.9 3.7l-15.2 16.6-6.6-7.1">
+                                                                    </path>
+                                                                  </symbol>
+                                                                </svg>
+                                                              </div>
+                                                              <div class="checkbox-wrapper-28">
+                                                                <input id="tmp-39" type="checkbox" class="promoted-input-checkbox"/>
+                                                                <svg><use xlink:href="#checkmark-30"/></svg>
+                                                                <label for="tmp-39">
+                                                                  Checkbox   
+                                                                </label>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                                                                  <symbol id="checkmark-39" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-miterlimit="10" fill="none"  d="M22.9 3.7l-15.2 16.6-6.6-7.1">
+                                                                    </path>
+                                                                  </symbol>
+                                                                </svg>
+                                                              </div>
+                                                              <div class="checkbox-wrapper-28">
+                                                                <input id="tmp-40" type="checkbox" class="promoted-input-checkbox"/>
+                                                                <svg><use xlink:href="#checkmark-30"/></svg>
+                                                                <label for="tmp-40">
+                                                                  Checkbox   
+                                                                </label>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                                                                  <symbol id="checkmark-40" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-miterlimit="10" fill="none"  d="M22.9 3.7l-15.2 16.6-6.6-7.1">
+                                                                    </path>
+                                                                  </symbol>
+                                                                </svg>
+                                                              </div>
+                                                              <div class="checkbox-wrapper-28">
+                                                                <input id="tmp-41" type="checkbox" class="promoted-input-checkbox"/>
+                                                                <svg><use xlink:href="#checkmark-30"/></svg>
+                                                                <label for="tmp-41">
+                                                                  Checkbox   
+                                                                </label>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                                                                  <symbol id="checkmark-41" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-miterlimit="10" fill="none"  d="M22.9 3.7l-15.2 16.6-6.6-7.1">
+                                                                    </path>
+                                                                  </symbol>
+                                                                </svg>
+                                                              </div>
+                                                              
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="medical-history-Btnmain">
+                                                        <button>Cancel</button>
+                                                        <button>Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+
+                            </div>
+                        </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </main>
+        <!-- <div class="tab-main">
+          <i class="fa-regular fa-circle"></i>
+          <p>Dashboard</p>
+      </div> -->
+    </div>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- swiper end -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootstrap.js."></script>
+    <script src="../assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+       <script>
+   document.addEventListener('DOMContentLoaded', function() {
+    const highlightCells = document.querySelectorAll('.professional-table .highlight');
+    const dropdownMenu = document.getElementById('table-dropdown-menu');
+    let dropdownOpen = false;
+
+    highlightCells.forEach(cell => {
+        cell.addEventListener('click', function(event) {
+            // Get the position of the clicked cell
+            const rect = cell.getBoundingClientRect();
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+            // Position the dropdown menu
+            dropdownMenu.style.left = (rect.left + scrollLeft) + 'px';
+            dropdownMenu.style.top = (rect.bottom + scrollTop) + 'px';
+            dropdownMenu.style.display = 'block';
+            dropdownOpen = true;
+        });
+    });
+
+    dropdownMenu.addEventListener('mouseleave', function() {
+        if (dropdownOpen) {
+            dropdownMenu.style.display = 'none';
+            dropdownOpen = false;
+        }
+    });
+
+    document.addEventListener('mouseover', function(event) {
+        if (dropdownOpen && !dropdownMenu.contains(event.target) && !event.target.classList.contains('highlight')) {
+            dropdownMenu.style.display = 'none';
+            dropdownOpen = false;
+        }
+    });
+});
+
+
+
+        // triange detail popup
+                $(document).on("click", '.view-triangeBTn', function () {
+                $('.triange-detail-popup-main').addClass('active');
+                });
+
+                $(document).on("click", '.triage-closeBtn', function () {
+                    $('.triange-detail-popup-main').removeClass('active');
+                });
+             
+
+
+
+                $(document).ready(function () {
+                        $('.dropdown-button').click(function () {
+                            $(this).toggleClass('active');
+                        });
+
+                        $('.dropdown-content li').click(function () {
+                            var selectedOption = $(this).text();
+                            $(this).closest('.triage-stream-dropdown').find('.dropdown-button').text(selectedOption);
+                            $('.dropdown-button').removeClass('active');
+                        });
+                    });
+
+                
+           
+            
+
+
+       </script>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js?ver=6.2.2"
+        id="particle-js-js"></script>
+    <title>Document</title>
+</head>
+
+<body style="position: relative;">
+    <div class="main-Box container-fluid px-0">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>Smart Hospital</h1>
+                <div class="togler-btn">
+                    <i class="fa-solid fa-angles-left"></i>
+                </div>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="dropdown active">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/medicine-book_9597095 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">RTT Pathways</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/checklist_medical_healthcare_pen_clipboard_clipchart_icon_142002 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Clinical Coding</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/patient_2355692 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">OutPatient</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/share_4837049 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">E-Referral Service</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/medical-mask_3304431 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Master Patient Index</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/examination_12772954 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Waiting List</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/patient_2621786 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Inpatient</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Admit Patient from MPI</a>
+                        <a href="#">Active Patient Monitoring</a>
+                        <a href="#">Pending Admission List</a>
+                        <a href="#">View Patient by Ward</a>
+                        <a href="#">Bed Availability</a>
+                        <a href="#">Ward Diary</a>
+                        <a href="#">Bed Reservation</a>
+                        <a href="#">Admission Requests</a>
+                        <a href="#">View Recent Inpatient</a>
+                        <a href="#">View Ward Attenders</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/zoom_4660956 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Casenote Tracking</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/ambulance_2894975 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Emergency Care</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/medical-record_4914828 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Document Manage</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/doctor_709094 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Bluespier Theater</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="../assets/images/medical-result_2804593 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Reporting</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <!-- Repeat the above <li> for more dropdowns -->
+            </ul>
+        </aside>
+        <div class="mobile-menu">
+            <div class="menu-header">
+                <h1>Smart Hospital</h1>
+                <i class="fa-solid fa-arrow-left close-mobile-menu"></i>
+            </div>
+            <div class="menu-links-main">
+                <ul class="menu-links">
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Billing Appoinment</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Appointments</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>OPD Out-Patient</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>IPD In patient</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Pharmacy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Pathology</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Radiology</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Blood Bank</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Ambulance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Front Office</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Birth & Date Record</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Human Resource</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Referrals</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>TPA Management</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Finance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/Vector (8).png" alt="">
+                            <span>Messages</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <main class="main-content">
+            <header class="topbar">
+                <div class="mobile-togler">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="user-profile">
+                    <div class="notification">
+                        <img src="../assets/images/Vector (7).png" alt="">
+                        <span>0</span>
+                    </div>
+                    <div class="profile-pic">
+
+                        <img src="../assets/images/Photo.png" alt="User">
+                    </div>
+                    <div class="dropdow-main">
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Sub-link 1</a></li>
+                        <li><a href="#">Sub-link 2</a></li>
+                        <li><a href="#">Sub-link 3</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="content h-100">
+                <div class="container-fluid">
+   
+                        <div class="row overflow-hidden">
+                            <div class="col-12 px-0">
+                                <div class="login-user ">
+                                    <div class="d-flex justify-content-between gap-4">
+                                    <div class="login-user-detail-main">
+                                        <div class="login-user-image">
+                                            <img src="../assets/images/Rectangle 1092.png" alt="">
+                                        </div>
+                                        <div class="login-user-detail">
+                                            <h6>UGWU, Schima</h6>
+                                            <p>Gender: <span>Male </span> Born: <span>01-Apr-1976 (48Y)</span></p>
+                                            <p>Address: <span>13 Bostock Crescent, TELFORD, Shropshire, TF3 1BU</span></p>
+                                            <p>Triage Category:  <span>4</span>Clinic Patient: <span>No</span> Discharged: <span>27-Apr-2024</span> Regitered: <span>27-Apr-2024 14:14</span></p>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="hospital-info">
+                                        <p>Hospital Number: <span>561891A</span></p>
+                                        <p>NHS Number: <span>422 056 6627 (01)</span></p>
+                                        <p>CAS Number: <span>2704202443265</span></p>
+                                    </div>
+                                </div>
+                                <div class="view-dep-record-sec pt-3">
+                                    <div class="view-dep-record-sec-col">
+                                        <img src="../assets/images/Group 1261153031 (1).png" alt="">
+                                        <p>Patients in Department: 456</p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="discharge-pateint-main">
+                            <div class="discharge-pateint-filter-sec gap-3">
+                                <div class="specific-class">
+
+                                    <label for="">View Discharge Patient</label>
+                                    <div class="triage-stream-dropdown" >
+                                        <div class="dropdown-button">
+                                            Select an option
+                                            <i class="fa fa-angle-down"></i> <!-- Font Awesome icon for down-angle -->
+                                        </div>
+                                        <ul class="dropdown-content">
+                                            <li>PRH Last 7 Days</li>
+                                            <li>PRH Today</li>
+                                            <li>RSH Last 7 Days</li>
+                                            <li>RSH Today</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="triage-stream-dropdown" id="specific-id">
+                                    <div class="dropdown-button">
+                                        Surname
+                                        <i class="fa fa-angle-down"></i> <!-- Font Awesome icon for down-angle -->
+                                    </div>
+                                    <ul class="dropdown-content">
+                                        <li>ARA PRH</li>
+                                        <li>Majors PRH</li>
+                                        <li>WR PRH</li>
+                                    </ul>
+                                </div>
+                                <div class="discharge-pateint-viewBTn">
+                                    <button>View all</button>
+                                </div>
+                            </div>
+                            <div class="table-main">
+                                <div class="table-container" style="max-height: 640px;">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Age</th>
+                                                <th>Hospital number</th>
+                                                <th>Arrival Time</th>
+                                                <th>Discharge Time</th>
+                                                <th>Destination</th>
+                                               
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                    <td>Arnold, Jennifer</td>
+                                                    <td>69</td>
+                                                    <td>931538</td>
+                                                    <td>17-Apr 14:14</td>
+                                                    <td>27-Apr 38:37</td>
+                                                    <td>Home</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Arnold, Jennifer</td>
+                                                    <td>69</td>
+                                                    <td>931538</td>
+                                                    <td>17-Apr 14:14</td>
+                                                    <td>27-Apr 38:37</td>
+                                                    <td>Home</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Arnold, Jennifer</td>
+                                                    <td>69</td>
+                                                    <td>931538</td>
+                                                    <td>17-Apr 14:14</td>
+                                                    <td>27-Apr 38:37</td>
+                                                    <td>Home</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Arnold, Jennifer</td>
+                                                    <td>69</td>
+                                                    <td>931538</td>
+                                                    <td>17-Apr 14:14</td>
+                                                    <td>27-Apr 38:37</td>
+                                                    <td>Home</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Arnold, Jennifer</td>
+                                                    <td>69</td>
+                                                    <td>931538</td>
+                                                    <td>17-Apr 14:14</td>
+                                                    <td>27-Apr 38:37</td>
+                                                    <td>Home</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Arnold, Jennifer</td>
+                                                    <td>69</td>
+                                                    <td>931538</td>
+                                                    <td>17-Apr 14:14</td>
+                                                    <td>27-Apr 38:37</td>
+                                                    <td>Home</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Arnold, Jennifer</td>
+                                                    <td>69</td>
+                                                    <td>931538</td>
+                                                    <td>17-Apr 14:14</td>
+                                                    <td>27-Apr 38:37</td>
+                                                    <td>Home</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Arnold, Jennifer</td>
+                                                    <td>69</td>
+                                                    <td>931538</td>
+                                                    <td>17-Apr 14:14</td>
+                                                    <td>27-Apr 38:37</td>
+                                                    <td>Home</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Arnold, Jennifer</td>
+                                                    <td>69</td>
+                                                    <td>931538</td>
+                                                    <td>17-Apr 14:14</td>
+                                                    <td>27-Apr 38:37</td>
+                                                    <td>Home</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Arnold, Jennifer</td>
+                                                    <td>69</td>
+                                                    <td>931538</td>
+                                                    <td>17-Apr 14:14</td>
+                                                    <td>27-Apr 38:37</td>
+                                                    <td>Home</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Arnold, Jennifer</td>
+                                                    <td>69</td>
+                                                    <td>931538</td>
+                                                    <td>17-Apr 14:14</td>
+                                                    <td>27-Apr 38:37</td>
+                                                    <td>Home</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Arnold, Jennifer</td>
+                                                    <td>69</td>
+                                                    <td>931538</td>
+                                                    <td>17-Apr 14:14</td>
+                                                    <td>27-Apr 38:37</td>
+                                                    <td>Home</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Arnold, Jennifer</td>
+                                                    <td>69</td>
+                                                    <td>931538</td>
+                                                    <td>17-Apr 14:14</td>
+                                                    <td>27-Apr 38:37</td>
+                                                    <td>Home</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Arnold, Jennifer</td>
+                                                    <td>69</td>
+                                                    <td>931538</td>
+                                                    <td>17-Apr 14:14</td>
+                                                    <td>27-Apr 38:37</td>
+                                                    <td>Home</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Arnold, Jennifer</td>
+                                                    <td>69</td>
+                                                    <td>931538</td>
+                                                    <td>17-Apr 14:14</td>
+                                                    <td>27-Apr 38:37</td>
+                                                    <td>Home</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Arnold, Jennifer</td>
+                                                    <td>69</td>
+                                                    <td>931538</td>
+                                                    <td>17-Apr 14:14</td>
+                                                    <td>27-Apr 38:37</td>
+                                                    <td>Home</td>
+                                                </tr>
+                                     
+                                            <!-- Add more rows as needed -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </main>
+        <!-- <div class="tab-main">
+          <i class="fa-regular fa-circle"></i>
+          <p>Dashboard</p>
+      </div> -->
+    </div>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- swiper end -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootstrap.js."></script>
+    <script src="../assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+       <script>
+   document.addEventListener('DOMContentLoaded', function() {
+    const highlightCells = document.querySelectorAll('.professional-table .highlight');
+    const dropdownMenu = document.getElementById('table-dropdown-menu');
+    let dropdownOpen = false;
+
+    highlightCells.forEach(cell => {
+        cell.addEventListener('click', function(event) {
+            // Get the position of the clicked cell
+            const rect = cell.getBoundingClientRect();
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+            // Position the dropdown menu
+            dropdownMenu.style.left = (rect.left + scrollLeft) + 'px';
+            dropdownMenu.style.top = (rect.bottom + scrollTop) + 'px';
+            dropdownMenu.style.display = 'block';
+            dropdownOpen = true;
+        });
+    });
+
+    dropdownMenu.addEventListener('mouseleave', function() {
+        if (dropdownOpen) {
+            dropdownMenu.style.display = 'none';
+            dropdownOpen = false;
+        }
+    });
+
+    document.addEventListener('mouseover', function(event) {
+        if (dropdownOpen && !dropdownMenu.contains(event.target) && !event.target.classList.contains('highlight')) {
+            dropdownMenu.style.display = 'none';
+            dropdownOpen = false;
+        }
+    });
+});
+
+
+
+        // triange detail popup
+                $(document).on("click", '.view-triangeBTn', function () {
+                $('.triange-detail-popup-main').addClass('active');
+                });
+
+                $(document).on("click", '.triage-closeBtn', function () {
+                    $('.triange-detail-popup-main').removeClass('active');
+                });
+                
+                // decision admit popup
+                $(document).on("click", '.decision-admit-viewBtn', function () {
+                $('.decision-admit-popup-main').addClass('active');
+                });
+
+                $(document).on("click", '.decision-admit-closeBtn', function () {
+                    $('.decision-admit-popup-main').removeClass('active');
+                });
+                
+
+            
+
+                $(document).ready(function () {
+                        $('.dropdown-button').click(function () {
+                            $(this).toggleClass('active');
+                        });
+
+                        $('.dropdown-content li').click(function () {
+                            var selectedOption = $(this).text();
+                            $(this).closest('.triage-stream-dropdown').find('.dropdown-button').text(selectedOption);
+                            $('.dropdown-button').removeClass('active');
+                        });
+                    });
+
+                
+           
+            
+
+
+       </script>
+
+    
+</body>
+
+</html>

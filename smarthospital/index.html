@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js?ver=6.2.2"
+        id="particle-js-js"></script>
+    <title>Document</title>
+</head>
+<style>
+  
+</style>
+
+<body>
+    <div class="main-Box container-fluid px-0">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>Smart Hospital</h1>
+                <div class="togler-btn">
+                    <i class="fa-solid fa-angles-left"></i>
+                </div>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="dropdown active">
+                    <div class="dropdown-header">
+                        <img src="assets/images/medicine-book_9597095 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">RTT Pathways</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/checklist_medical_healthcare_pen_clipboard_clipchart_icon_142002 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Clinical Coding</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/patient_2355692 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">OutPatient</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/share_4837049 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">E-Referral Service</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/medical-mask_3304431 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Master Patient Index</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/examination_12772954 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Waiting List</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/patient_2621786 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Inpatient</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Admit Patient from MPI</a>
+                        <a href="#">Active Patient Monitoring</a>
+                        <a href="#">Pending Admission List</a>
+                        <a href="#">View Patient by Ward</a>
+                        <a href="#">Bed Availability</a>
+                        <a href="#">Ward Diary</a>
+                        <a href="#">Bed Reservation</a>
+                        <a href="#">Admission Requests</a>
+                        <a href="#">View Recent Inpatient</a>
+                        <a href="#">View Ward Attenders</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/zoom_4660956 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Casenote Tracking</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/ambulance_2894975 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Emergency Care</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/medical-record_4914828 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Document Manage</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/doctor_709094 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Bluespier Theater</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/medical-result_2804593 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Reporting</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <!-- Repeat the above <li> for more dropdowns -->
+            </ul>
+        </aside>
+        <div class="mobile-menu">
+            <div class="menu-header">
+                <h1>Smart Hospital</h1>
+                <i class="fa-solid fa-arrow-left close-mobile-menu"></i>
+            </div>
+            <div class="menu-links-main">
+                <ul class="menu-links">
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Billing Appoinment</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Appointments</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>OPD Out-Patient</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>IPD In patient</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Pharmacy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Pathology</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Radiology</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Blood Bank</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Ambulance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Front Office</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Birth & Date Record</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Human Resource</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Referrals</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>TPA Management</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Finance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Messages</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <main class="main-content">
+            <header class="topbar">
+                <div class="mobile-togler">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="user-profile">
+                    <div class="notification">
+                        <img src="assets/images/Vector (7).png" alt="">
+                        <span>0</span>
+                    </div>
+                    <div class="profile-pic">
+
+                        <img src="assets/images/Photo.png" alt="User">
+                    </div>
+                    <div class="dropdow-main">
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Sub-link 1</a></li>
+                        <li><a href="#">Sub-link 2</a></li>
+                        <li><a href="#">Sub-link 3</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="content">
+                <div class="container-fluid px-0">
+                    <div class="tabs-slider">
+                        <button class="arrow left" onclick="slideTabs(-1)"><i
+                                class="fa-solid fa-chevron-left"></i></button>
+                        <div class="tabs-container">
+                            <div class="tabs">
+                                <div class="tab active">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="tab">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="tab">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="tab">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="tab">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="tab">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="tab">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="tab">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="tab">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="tab">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="tab">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="tab">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="tab">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="tab">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="tab">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="tab">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="tab">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="tab">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="tab">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="tab">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="tab">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="tab">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Dashboard</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <button class="arrow right" onclick="slideTabs(1)"><i
+                                class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                    <div class="container-fluid px-0">
+
+
+                        <div class="row w-100 g-0">
+                            <div class="col-lg-6 px-0">
+                                <div class="user-info-header">
+                                    <div class="user-name">
+                                        <h2>Cristian Missina (843)</h2>
+                                    </div>
+                                    <div class="edition-sec">
+                                        <img src="assets/images/align-justify.png" alt="">
+                                        <img src="assets/images/edit-3.png" alt="">
+                                        <img src="assets/images/clipboard.png" alt="">
+                                        <img src="assets/images/trash.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="profile-detail-sec">
+                                    <div class="profile-sec">
+                                        <div class="user-profile-image">
+                                            <img src="assets/images/Rectangle 1092.png" alt="">
+                                        </div>
+                                        <div class="user-detail">
+                                            <p>Gender</p>
+                                            <p>Gender</p>
+                                            <p>Guardian Name</p>
+                                            <p>Phone</p>
+                                        </div>
+                                    </div>
+                                    <div class="user-personal-info">
+                                        <p>Male</p>
+                                        <p>24 Year 11 Month 2 Days</p>
+                                        <p>David</p>
+                                        <p>234567890</p>
+                                    </div>
+                                </div>
+                                <div class="pateint-admit-detail">
+                                    <div class="pateint-admit-detail-left">
+
+
+                                        <div class="admit-heads-links">
+                                            <p>Case ID</p>
+                                            <p>1PD No</p>
+                                            <p>Admission Date</p>
+                                            <p>Time</p>
+                                            <p>Bed</p>
+                                        </div>
+                                        <div class="chart-container">
+                                            <canvas id="myDonutChart"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="pateint-admit-detail-right">
+                                        <div class="admit-links-ans">
+                                            <p>6182</p>
+                                            <p>IPDN96</p>
+                                            <p>05/26/2024</p>
+                                            <p>11: 42 AM</p>
+                                            <p>GF-106 VIP Ward<br>
+                                                Ground Floor</p>
+                                        </div>
+                                        <div class="admit-graph-ans">
+                                            <div class="admit-graph-ans-col">
+                                                <h6>24th May</h6>
+                                                <p>EDD</p>
+                                            </div>
+                                            <div class="admit-graph-ans-col">
+                                                <h5>4 Days</h5>
+                                                <p>Length of Stay</p>
+                                            </div>
+                                            <div class="admit-graph-ans-col">
+                                                <h5>10 Days</h5>
+                                                <p>Discharge Prediction</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="date-time-images">
+                                    <img src="assets/images/clock (1) 1.png" alt="">
+                                    <img src="assets/images/hut 1.png" alt="">
+                                    <img src="assets/images/circular-alarm-clock-tool 1.png" alt="">
+                                </div>
+                                <div class="pateint-admit-progress">
+                                    <div class="pateint-admit-progress-feild">
+                                        <div class="celender-inputBOX">
+                                            <label for="mffd-label">MFFD</label>
+                                            <input type="date" name="mffd-date" id="mffd-date">
+                                        </div>
+                                        <div class="patientrisk-Box">
+                                            <label for="">Patient Risk</label>
+                                            <div class="dropdown-container">
+                                                <select id="status">
+                                                    <option value="status-change">Status Change</option>
+                                                    <option value="status-1">Status 1</option>
+                                                    <option value="status-2">Status 2</option>
+                                                    <option value="status-3">Status 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="specific-dropdown" class="mt-2">
+                                        <select id="dropdown-select">
+                                            <option value="">RFD</option>
+                                            <option value="Option 1">Option 1</option>
+                                            <option value="Option 2">Option 2</option>
+                                            <option value="Option 3">Option 3</option>
+                                        </select>
+                                    </div>
+                                    <label for="">Discharge Task</label>
+                                    <div class="discharge-task-main">
+                                        <div class="discharge-task-col">
+                                            <img src="assets/images/check (2) 1.png" alt="">
+                                            <p>Completed</p>
+                                        </div>
+                                        <div class="discharge-task-col">
+                                            <img src="assets/images/processing-time 1.png" alt="">
+                                            <p>In Progress</p>
+                                        </div>
+                                        <div class="discharge-task-col">
+                                            <img src="assets/images/dry-clean 1.png" alt="">
+                                            <p>Not Started</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hospital-notes-main">
+                                    <h6>Known Allergies</h6>
+                                    <div class="hospital-note">
+                                        <img src="assets/images/Group 1261153031.png" alt="">
+                                        <p>Dust</p>
+                                    </div>
+                                </div>
+                                <div class="hospital-notes-main">
+                                    <h6>Finding</h6>
+                                    <div class="hospital-note">
+                                        <img src="assets/images/Group 1261153031.png" alt="">
+                                        <p>Yes, you can try us for free for 30 days. If you want, we’ll provide you with
+                                            a free, personalized 30-minute onboarding call to get you up and running as
+                                            soon possible.</p>
+                                    </div>
+                                </div>
+                                <div class="hospital-notes-main">
+                                    <h6>Symptoms</h6>
+                                    <div class="hospital-note">
+                                        <img src="assets/images/Group 1261153031.png" alt="">
+                                        <p>Yes, you can try us for free for 30 days. If you want, we’ll provide you with
+                                            a free, personalized 30 minute onboarding call to get you up and running as
+                                            possible.</p>
+                                    </div>
+                                </div>
+                                <div class="hospital-notes-main">
+                                    <h6>Consultant Director</h6>
+                                    <div class="hospital-note">
+                                        <img src="assets/images/Ellipse 969.png" alt="">
+                                        <p>David</p>
+                                    </div>
+                                </div>
+                                <div class="nurse-note-main">
+                                    <h6>Nurse Notes</h6>
+                                    <div class="nurse-date-time">
+                                        <p>05/05/2024 - 12:30 PM</p>
+                                    </div>
+                                    <div class="nurse-note">
+                                        <p>Yes, you can try us for free for 30 days. Our friendly team will work with
+                                            you to get you and running as soon as possible.Solve a problem or close a
+                                            sale in real-time with chat. If no one is available, customers are
+                                            seamlessly routed to email without confusion.Solve a problem or close a sale
+                                            in real-time with chat. If no one is available, customers are seamlessly
+                                            routed to email without confusion.</p>
+                                    </div>
+                                </div>
+                                <div class="time-line-main">
+                                    <h6>Time Line</h6>
+                                    <div class="nurse-date-time">
+                                        <p>05/05/2024 - 12:30 PM</p>
+                                    </div>
+                                    <div class="time-line-note">
+                                        <p>Take Medication After Every Meal</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="special-nurse-head">
+                                    <h2>Specialist Nurse Refferl</h2>
+                                </div>
+                                <div class="special-nurse-from">
+                                    <label for="">Physio</label>
+
+                                    <textarea name="" placeholder="Enter your messaage..." id="" rows="5"></textarea>
+
+                                    <label for="">Select Date</label>
+                                    <div class="dropdown-container">
+                                        <select id="status">
+                                            <option value="status-change">Wednesday, 1th January</option>
+                                            <option value="status-1">Status 1</option>
+                                            <option value="status-2">Status 2</option>
+                                            <option value="status-3">Status 3</option>
+                                        </select>
+                                    </div>
+                                    <label for="">Select Time</label>
+                                    <div class="dropdown-container">
+                                        <select id="status">
+                                            <option value="status-change">12:30 PM</option>
+                                            <option value="status-1">12:30 PM</option>
+                                            <option value="status-2">Status 2</option>
+                                            <option value="status-3">Status 3</option>
+                                        </select>
+                                    </div>
+                                    <label for="">Search Clinician</label>
+                                    <div class="search-container">
+                                        <input type="search" class="nurse-searchBar" placeholder="Search">
+
+                                    </div>
+                                    <div class="special-nurseBtn">
+                                        <button>Save</button>
+                                        <button class="view-physio-popup">Update</button>
+                                    </div>
+                                </div>
+                                <div class="special-nurse-from">
+                                    <label for="">Dietetics</label>
+
+                                    <textarea name="" placeholder="Enter your messaage..." id="" rows="5"></textarea>
+
+                                    <label for="">Select Date</label>
+                                    <div class="dropdown-container">
+                                        <select id="status">
+                                            <option value="status-change">Wednesday, 1th January</option>
+                                            <option value="status-1">Status 1</option>
+                                            <option value="status-2">Status 2</option>
+                                            <option value="status-3">Status 3</option>
+                                        </select>
+                                    </div>
+                                    <label for="">Select Time</label>
+                                    <div class="dropdown-container">
+                                        <select id="status">
+                                            <option value="status-change">12:30 PM</option>
+                                            <option value="status-1">12:30 PM</option>
+                                            <option value="status-2">Status 2</option>
+                                            <option value="status-3">Status 3</option>
+                                        </select>
+                                    </div>
+                                    <label for="">Search Clinician</label>
+                                    <div class="search-container">
+                                        <input type="search" class="nurse-searchBar" placeholder="Search">
+
+                                    </div>
+                                    <div class="special-nurseBtn">
+                                        <button>Save</button>
+                                        <button class="view-Dietetics-popup">Update</button>
+                                    </div>
+                                </div>
+                                <div class="special-nurse-from">
+                                    <label for="">SLT</label>
+
+                                    <textarea name="" placeholder="Enter your messaage..." id="" rows="5"></textarea>
+
+                                    <label for="">Select Date</label>
+                                    <div class="dropdown-container">
+                                        <select id="status">
+                                            <option value="status-change">Wednesday, 1th January</option>
+                                            <option value="status-1">Status 1</option>
+                                            <option value="status-2">Status 2</option>
+                                            <option value="status-3">Status 3</option>
+                                        </select>
+                                    </div>
+                                    <label for="">Select Time</label>
+                                    <div class="dropdown-container">
+                                        <select id="status">
+                                            <option value="status-change">12:30 PM</option>
+                                            <option value="status-1">12:30 PM</option>
+                                            <option value="status-2">Status 2</option>
+                                            <option value="status-3">Status 3</option>
+                                        </select>
+                                    </div>
+                                    <label for="">Search Clinician</label>
+                                    <div class="search-container">
+                                        <input type="search" class="nurse-searchBar" placeholder="Search">
+
+                                    </div>
+                                    <div class="special-nurseBtn">
+                                        <button>Save</button>
+                                        <button class="view-slt-popup">Update</button>
+                                    </div>
+                                </div>
+                                <div class="special-nurse-from">
+                                    <label for="">OT</label>
+
+                                    <textarea name="" placeholder="Enter your messaage..." id="" rows="5"></textarea>
+
+                                    <label for="">Select Date</label>
+                                    <div class="dropdown-container">
+                                        <select id="status">
+                                            <option value="status-change">Wednesday, 1th January</option>
+                                            <option value="status-1">Status 1</option>
+                                            <option value="status-2">Status 2</option>
+                                            <option value="status-3">Status 3</option>
+                                        </select>
+                                    </div>
+                                    <label for="">Select Time</label>
+                                    <div class="dropdown-container">
+                                        <select id="status">
+                                            <option value="status-change">12:30 PM</option>
+                                            <option value="status-1">12:30 PM</option>
+                                            <option value="status-2">Status 2</option>
+                                            <option value="status-3">Status 3</option>
+                                        </select>
+                                    </div>
+                                    <label for="">Search Clinician</label>
+                                    <div class="search-container">
+                                        <input type="search" class="nurse-searchBar" placeholder="Search">
+
+                                    </div>
+                                    <div class="special-nurseBtn">
+                                        <button>Save</button>
+                                        <button class="view-ot-popup">Update</button>
+                                    </div>
+                                </div>
+                                <div class="pateint-transfer-form">
+                                    <h6>Patient Transfer <span>(Select Ward and Bed) </span></h6>
+                                    <label for="">Select Ward</label>
+                                    <div class="dropdown-container">
+                                        <select id="status">
+                                            <option value="status-change">Ward A</option>
+                                            <option value="status-1">Status 1</option>
+                                            <option value="status-2">Status 2</option>
+                                            <option value="status-3">Status 3</option>
+                                        </select>
+                                    </div>
+                                    <label for="">Select Bed</label>
+                                    <div class="dropdown-container">
+                                        <select id="status">
+                                            <option value="status-change">Bed 1</option>
+                                            <option value="status-1">Status 1</option>
+                                            <option value="status-2">Status 2</option>
+                                            <option value="status-3">Status 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="pateint-transferBtn">
+                                        <button class="transfer-saveBtn">Save</button>
+                                        <button class="view-pateint-transfer-popup">Update</button>
+                                    </div>
+                                </div>
+                                <div class="shedule-transfer-form">
+                                    <h6>Schedule Transfer<span>(Select Ward and Bed) </span></h6>
+                                    <label for="">Select Ward</label>
+                                    <div class="dropdown-container">
+                                        <select id="status">
+                                            <option value="status-change">Ward A</option>
+                                            <option value="status-1">Status 1</option>
+                                            <option value="status-2">Status 2</option>
+                                            <option value="status-3">Status 3</option>
+                                        </select>
+                                    </div>
+                                    <label for="">Select Bed</label>
+                                    <div class="dropdown-container">
+                                        <select id="status">
+                                            <option value="status-change">Bed 1</option>
+                                            <option value="status-1">Status 1</option>
+                                            <option value="status-2">Status 2</option>
+                                            <option value="status-3">Status 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="shedule-transferBtn">
+                                        <button>Save</button>
+                                        <button class="view-schedule-popup">Update</button>
+                                    </div>
+                                </div>
+                                <div class="medication-table-sec">
+
+                                    <h6>Medication</h6>
+                                    <table>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Medicine Time</th>
+                                            <th>Medicine Time</th>
+                                            <th>Medicine Time</th>
+                                        </tr>
+                                        <tr>
+                                            <td>05/05/2024</td>
+                                            <td>Syrup</td>
+                                            <td>1 (ML)</td>
+                                            <td>03:00 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>05/05/2024</td>
+                                            <td>Syrup</td>
+                                            <td>1 (ML)</td>
+                                            <td>03:00 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>05/05/2024</td>
+                                            <td>Syrup</td>
+                                            <td>1 (ML)</td>
+                                            <td>03:00 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>05/05/2024</td>
+                                            <td>Syrup</td>
+                                            <td>1 (ML)</td>
+                                            <td>03:00 PM</td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                                <div class="prescription-table-sec">
+
+                                    <h6>Prescription</h6>
+                                    <table>
+                                        <tr>
+                                            <th>Prescription No</th>
+                                            <th>Date</th>
+                                            <th>Finding</th>
+
+                                        </tr>
+                                        <tr>
+                                            <td>IPDP291</td>
+                                            <td>05/05/2024</td>
+                                            <td>Yes, you can try us for free for 30 days. If you want, we’ll provide you
+                                                with a free, personalized 30 minute onboarding call to get you up and
+                                                running as possible.</td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                                <div class="consultant-table-sec">
+
+                                    <h6>Consultant Register</h6>
+                                    <table>
+                                        <tr>
+                                            <th>Applied Date</th>
+                                            <th>Consultant Doctor</th>
+                                            <th>Instructions</th>
+                                            <th>Instruction Date</th>
+
+                                        </tr>
+                                        <tr>
+                                            <td>05/05/2024</td>
+                                            <td>David</td>
+                                            <td>After meal medicine</td>
+                                            <td>05/05/2024</td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                                <div class="labInvestigation-table-sec">
+
+                                    <h6>Lab Investigation</h6>
+                                    <table>
+                                        <tr>
+                                            <th>Test Name</th>
+                                            <th>Consultant Doctor</th>
+                                            <th>Sample Collected</th>
+                                            <th>Expected Date</th>
+
+                                        </tr>
+                                        <tr>
+                                            <td>X-rays</td>
+                                            <td>Pathology</td>
+                                            <td>Tumer</td>
+                                            <td>05/05/2024</td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                                <div class="operation-table-sec">
+
+                                    <h6>Operation</h6>
+                                    <table>
+                                        <tr>
+                                            <th>Reference No</th>
+                                            <th>Operation Date</th>
+                                            <th>Operation Name</th>
+                                            <th>Category</th>
+
+                                        </tr>
+                                        <tr>
+                                            <td>OTRFTUWD1</td>
+                                            <td>05/05/2024</td>
+                                            <td>Dilation</td>
+                                            <td>Gynaecology</td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- physio update confirmation -->
+                <div class="update-confirmation-main">
+                    <div class="update-confirmation">
+                        <div class="update-confirm-head">
+                            <h6>Update Confirmation </h6>
+                            <i class="fa-solid fa-xmark update-confirm-closeBtn"></i>
+                        </div>
+                        <hr>
+                        <div class="update-confrim-form">
+                            <label for="">Physio</label>
+                            <textarea name="" id="" readonly placeholder=""
+                                rows="6">Yes, you can try us for free for 30 days. Our friendly team will work with you to get you and runing as soon as possible.Solve a problem or close a sale in real-time with chat. If no one is available, customers are seamlessly routed to email without confusion.Solve a problem or close a sale in real-time with chat. If no one is available, customers are seamlessly routed to email without confusion.</textarea>
+                            <label for="">Select Date</label>
+                            <div class="dropdown-container">
+                                <select id="status">
+                                    <option value="status-change">Wednesday, 1th January</option>
+                                    <option value="status-1">Status 1</option>
+                                    <option value="status-2">Status 2</option>
+                                    <option value="status-3">Status 3</option>
+                                </select>
+                            </div>
+                            <label for="">Select Time</label>
+                            <div class="dropdown-container">
+                                <select id="status">
+                                    <option value="status-change">12:30 PM</option>
+                                    <option value="status-1">Status 1</option>
+                                    <option value="status-2">Status 2</option>
+                                    <option value="status-3">Status 3</option>
+                                </select>
+                            </div>
+                            <label for="">Clinician Name</label>
+                            <input type="text" name="" placeholder="Clinician Name" id="">
+
+                            <div class="update-confrim-Btn-main">
+                                <button class="update-cancelBtn">Cancel</button>
+                                <button class="update-updateBtn">Update</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- Dietetics -->
+                <div class="Dietetics-popup-main">
+                    <div class="update-confirmation">
+                        <div class="update-confirm-head">
+                            <h6>Update Confirmation </h6>
+                            <i class="fa-solid fa-xmark close-diestic-popup"></i>
+                        </div>
+                        <hr>
+                        <div class="update-confrim-form">
+                            <label for="">Dietetics</label>
+                            <textarea name="" id="" readonly placeholder=""
+                                rows="6">Yes, you can try us for free for 30 days. Our friendly team will work with you to get you and runing as soon as possible.Solve a problem or close a sale in real-time with chat. If no one is available, customers are seamlessly routed to email without confusion.Solve a problem or close a sale in real-time with chat. If no one is available, customers are seamlessly routed to email without confusion.</textarea>
+                            <label for="">Select Date</label>
+                            <div class="dropdown-container">
+                                <select id="status">
+                                    <option value="status-change">Wednesday, 1th January</option>
+                                    <option value="status-1">Status 1</option>
+                                    <option value="status-2">Status 2</option>
+                                    <option value="status-3">Status 3</option>
+                                </select>
+                            </div>
+                            <label for="">Select Time</label>
+                            <div class="dropdown-container">
+                                <select id="status">
+                                    <option value="status-change">12:30 PM</option>
+                                    <option value="status-1">Status 1</option>
+                                    <option value="status-2">Status 2</option>
+                                    <option value="status-3">Status 3</option>
+                                </select>
+                            </div>
+                            <label for="">Clinician Name</label>
+                            <input type="text" name="" placeholder="Clinician Name" id="">
+
+                            <div class="update-confrim-Btn-main">
+                                <button class="update-cancelBtn">Cancel</button>
+                                <button class="update-updateBtn">Update</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- SLT POPUP -->
+                <div class="slt-popup-main">
+                    <div class="update-confirmation">
+                        <div class="update-confirm-head">
+                            <h6>Update Confirmation </h6>
+                            <i class="fa-solid fa-xmark close-slt-popup"></i>
+                        </div>
+                        <hr>
+                        <div class="update-confrim-form">
+                            <label for="">SLT</label>
+                            <textarea name="" id="" readonly placeholder=""
+                                rows="6">Yes, you can try us for free for 30 days. Our friendly team will work with you to get you and runing as soon as possible.Solve a problem or close a sale in real-time with chat. If no one is available, customers are seamlessly routed to email without confusion.Solve a problem or close a sale in real-time with chat. If no one is available, customers are seamlessly routed to email without confusion.</textarea>
+                            <label for="">Select Date</label>
+                            <div class="dropdown-container">
+                                <select id="status">
+                                    <option value="status-change">Wednesday, 1th January</option>
+                                    <option value="status-1">Status 1</option>
+                                    <option value="status-2">Status 2</option>
+                                    <option value="status-3">Status 3</option>
+                                </select>
+                            </div>
+                            <label for="">Select Time</label>
+                            <div class="dropdown-container">
+                                <select id="status">
+                                    <option value="status-change">12:30 PM</option>
+                                    <option value="status-1">Status 1</option>
+                                    <option value="status-2">Status 2</option>
+                                    <option value="status-3">Status 3</option>
+                                </select>
+                            </div>
+                            <label for="">Clinician Name</label>
+                            <input type="text" name="" placeholder="Clinician Name" id="">
+
+                            <div class="update-confrim-Btn-main">
+                                <button class="update-cancelBtn">Cancel</button>
+                                <button class="update-updateBtn">Update</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- ot POPUP -->
+                <div class="OT-popup-main">
+                    <div class="update-confirmation">
+                        <div class="update-confirm-head">
+                            <h6>Update Confirmation </h6>
+                            <i class="fa-solid fa-xmark close-OT-popup"></i>
+                        </div>
+                        <hr>
+                        <div class="update-confrim-form">
+                            <label for="">OT</label>
+                            <textarea name="" id="" readonly placeholder=""
+                                rows="6">Yes, you can try us for free for 30 days. Our friendly team will work with you to get you and runing as soon as possible.Solve a problem or close a sale in real-time with chat. If no one is available, customers are seamlessly routed to email without confusion.Solve a problem or close a sale in real-time with chat. If no one is available, customers are seamlessly routed to email without confusion.</textarea>
+                            <label for="">Select Date</label>
+                            <div class="dropdown-container">
+                                <select id="status">
+                                    <option value="status-change">Wednesday, 1th January</option>
+                                    <option value="status-1">Status 1</option>
+                                    <option value="status-2">Status 2</option>
+                                    <option value="status-3">Status 3</option>
+                                </select>
+                            </div>
+                            <label for="">Select Time</label>
+                            <div class="dropdown-container">
+                                <select id="status">
+                                    <option value="status-change">12:30 PM</option>
+                                    <option value="status-1">Status 1</option>
+                                    <option value="status-2">Status 2</option>
+                                    <option value="status-3">Status 3</option>
+                                </select>
+                            </div>
+                            <label for="">Clinician Name</label>
+                            <input type="text" name="" placeholder="Clinician Name" id="">
+
+                            <div class="update-confrim-Btn-main">
+                                <button class="update-cancelBtn">Cancel</button>
+                                <button class="update-updateBtn">Update</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- pateint-transfer update POPUP -->
+                <div class="pateint-transfer-popup-main">
+                    <div class="update-confirmation">
+                        <div class="update-confirm-head">
+                            <h6>Update Confirmation </h6>
+                            <i class="fa-solid fa-xmark close-pt-transfer-popup"></i>
+                        </div>
+                        <hr>
+                        <div class="update-confrim-form">
+                            <label for="">Patient Transfer</label>
+                            <textarea name="" id="" readonly placeholder=""
+                                rows="6">Yes, you can try us for free for 30 days. Our friendly team will work with you to get you and runing as soon as possible.Solve a problem or close a sale in real-time with chat. If no one is available, customers are seamlessly routed to email without confusion.Solve a problem or close a sale in real-time with chat. If no one is available, customers are seamlessly routed to email without confusion.</textarea>
+                            <label for="">Select Date</label>
+                            <div class="dropdown-container">
+                                <select id="status">
+                                    <option value="status-change">Wednesday, 1th January</option>
+                                    <option value="status-1">Status 1</option>
+                                    <option value="status-2">Status 2</option>
+                                    <option value="status-3">Status 3</option>
+                                </select>
+                            </div>
+                            <label for="">Select Time</label>
+                            <div class="dropdown-container">
+                                <select id="status">
+                                    <option value="status-change">12:30 PM</option>
+                                    <option value="status-1">Status 1</option>
+                                    <option value="status-2">Status 2</option>
+                                    <option value="status-3">Status 3</option>
+                                </select>
+                            </div>
+                            <label for="">Clinician Name</label>
+                            <input type="text" name="" placeholder="Clinician Name" id="">
+
+                            <div class="update-confrim-Btn-main">
+                                <button class="update-cancelBtn">Cancel</button>
+                                <button class="update-updateBtn">Update</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- Schedule-transfer update POPUP -->
+                <div class="schedule-transfer-popup-main">
+                    <div class="update-confirmation">
+                        <div class="update-confirm-head">
+                            <h6>Update Confirmation </h6>
+                            <i class="fa-solid fa-xmark close-schedule-popup"></i>
+                        </div>
+                        <hr>
+                        <div class="update-confrim-form">
+                            <label for="">Schedule Transfer</label>
+                            <textarea name="" id="" readonly placeholder=""
+                                rows="6">Yes, you can try us for free for 30 days. Our friendly team will work with you to get you and runing as soon as possible.Solve a problem or close a sale in real-time with chat. If no one is available, customers are seamlessly routed to email without confusion.Solve a problem or close a sale in real-time with chat. If no one is available, customers are seamlessly routed to email without confusion.</textarea>
+                            <label for="">Select Date</label>
+                            <div class="dropdown-container">
+                                <select id="status">
+                                    <option value="status-change">Wednesday, 1th January</option>
+                                    <option value="status-1">Status 1</option>
+                                    <option value="status-2">Status 2</option>
+                                    <option value="status-3">Status 3</option>
+                                </select>
+                            </div>
+                            <label for="">Select Time</label>
+                            <div class="dropdown-container">
+                                <select id="status">
+                                    <option value="status-change">12:30 PM</option>
+                                    <option value="status-1">Status 1</option>
+                                    <option value="status-2">Status 2</option>
+                                    <option value="status-3">Status 3</option>
+                                </select>
+                            </div>
+                            <label for="">Clinician Name</label>
+                            <input type="text" name="" placeholder="Clinician Name" id="">
+
+                            <div class="update-confrim-Btn-main">
+                                <button class="update-cancelBtn">Cancel</button>
+                                <button class="update-updateBtn">Update</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="referal-continue-main">
+                    <div class="referal-continue">
+                        <p>You are changing the statusof the referral. Do you want to continue?</p>
+                        <div class="referal-cotinure-Btnmain">
+                            <button class="referal-con-noBtn">No</button>
+                            <button>Yes</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="transfer-popup-main">
+                    <div class="transfer-popup">
+                        <p>Are you sure you want to save this transfer?</p>
+                        <div class="pateint-transfer-popup-Btnmain">
+                            <button class="transfer-noBtn">No</button>
+                            <button>Yes</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </main>
+        <!-- <div class="tab-main">
+          <i class="fa-regular fa-circle"></i>
+          <p>Dashboard</p>
+      </div> -->
+    </div>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- swiper end -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.js."></script>
+    <script src="assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+    <script>
+        // script.js
+     
+        // jsssss////////////////////
+        document.getElementById('mffd-date').addEventListener('change', function () {
+            document.getElementById('specific-dropdown').style.display = 'block';
+        });
+
+        document.getElementById('dropdown-select').addEventListener('change', function () {
+            var selectedValue = this.value;
+            document.querySelector('.celender-inputBOX label').textContent = 'MFFD: ' + selectedValue;
+        });
+
+        // transfer-popup
+        $(document).on("click", '.transfer-saveBtn', function () {
+            $('.transfer-popup-main').addClass('active');
+        });
+        $(document).on("click", '.transfer-noBtn', function () {
+            $('.transfer-popup-main').removeClass('active');
+        });
+
+
+        // referal continue
+        $(document).on("click", '.update-updateBtn', function () {
+            $('.referal-continue-main').addClass('active');
+        });
+        $(document).on("click", '.referal-con-noBtn', function () {
+            $('.update-confirmation-main').addClass('active');
+        });
+        $(document).on("click", '.referal-con-noBtn', function () {
+            $('.referal-continue-main').removeClass('active');
+        });
+
+        // physio update confirmation 
+        $(document).on("click", '.view-physio-popup', function () {
+            $('.update-confirmation-main').addClass('active');
+        });
+        $(document).on("click", '.update-confirm-closeBtn', function () {
+            $('.update-confirmation-main').removeClass('active');
+        });
+        $(document).on("click", '.update-cancelBtn', function () {
+            $('.update-confirmation-main').removeClass('active');
+        });
+        $(document).on("click", '.update-updateBtn', function () {
+            $('.update-confirmation-main').removeClass('active');
+        });
+        // Dietetics update confirmation 
+        $(document).on("click", '.view-Dietetics-popup', function () {
+            $('.Dietetics-popup-main').addClass('active');
+        });
+        $(document).on("click", '.close-diestic-popup', function () {
+            $('.Dietetics-popup-main').removeClass('active');
+        });
+        $(document).on("click", '.update-cancelBtn', function () {
+            $('.Dietetics-popup-main').removeClass('active');
+        });
+        $(document).on("click", '.update-updateBtn', function () {
+            $('.Dietetics-popup-main').removeClass('active');
+        });
+        // SLT update confirmation 
+        $(document).on("click", '.view-slt-popup', function () {
+            $('.slt-popup-main').addClass('active');
+        });
+        $(document).on("click", '.close-slt-popup', function () {
+            $('.slt-popup-main').removeClass('active');
+        });
+        $(document).on("click", '.update-cancelBtn', function () {
+            $('.slt-popup-main').removeClass('active');
+        });
+        $(document).on("click", '.update-updateBtn', function () {
+            $('.slt-popup-main').removeClass('active');
+        });
+        // OT UPDATE POPUP
+        $(document).on("click", '.view-ot-popup', function () {
+            $('.OT-popup-main').addClass('active');
+        });
+        $(document).on("click", '.close-OT-popup', function () {
+            $('.OT-popup-main').removeClass('active');
+        });
+        $(document).on("click", '.update-cancelBtn', function () {
+            $('.OT-popup-main').removeClass('active');
+        });
+        $(document).on("click", '.update-updateBtn', function () {
+            $('.OT-popup-main').removeClass('active');
+        });
+        // pateint  transfer popup
+        $(document).on("click", '.view-pateint-transfer-popup', function () {
+            $('.pateint-transfer-popup-main').addClass('active');
+        });
+        $(document).on("click", '.close-pt-transfer-popup', function () {
+            $('.pateint-transfer-popup-main').removeClass('active');
+        });
+        $(document).on("click", '.update-cancelBtn', function () {
+            $('.pateint-transfer-popup-main').removeClass('active');
+        });
+        $(document).on("click", '.update-updateBtn', function () {
+            $('.pateint-transfer-popup-main').removeClass('active');
+        });
+        // Schedule  transfer popup
+        $(document).on("click", '.view-schedule-popup', function () {
+            $('.schedule-transfer-popup-main').addClass('active');
+        });
+        $(document).on("click", '.close-schedule-popup', function () {
+            $('.schedule-transfer-popup-main').removeClass('active');
+        });
+        $(document).on("click", '.update-cancelBtn', function () {
+            $('.schedule-transfer-popup-main').removeClass('active');
+        });
+        $(document).on("click", '.update-updateBtn', function () {
+            $('.schedule-transfer-popup-main').removeClass('active');
+        });
+
+
+    </script>
+</body>
+
+</html>

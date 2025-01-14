@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js?ver=6.2.2"
+        id="particle-js-js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-Box container-fluid px-0">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>Smart Hospital</h1>
+                <div class="togler-btn">
+                    <i class="fa-solid fa-angles-left"></i>
+                </div>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="dropdown active">
+                    <div class="dropdown-header">
+                        <img src="assets/images/medicine-book_9597095 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">RTT Pathways</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/checklist_medical_healthcare_pen_clipboard_clipchart_icon_142002 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Clinical Coding</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/patient_2355692 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">OutPatient</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/share_4837049 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">E-Referral Service</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/medical-mask_3304431 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Master Patient Index</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/examination_12772954 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Waiting List</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/patient_2621786 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Inpatient</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Admit Patient from MPI</a>
+                        <a href="#">Active Patient Monitoring</a>
+                        <a href="#">Pending Admission List</a>
+                        <a href="#">View Patient by Ward</a>
+                        <a href="#">Bed Availability</a>
+                        <a href="#">Ward Diary</a>
+                        <a href="#">Bed Reservation</a>
+                        <a href="#">Admission Requests</a>
+                        <a href="#">View Recent Inpatient</a>
+                        <a href="#">View Ward Attenders</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/zoom_4660956 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Casenote Tracking</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/ambulance_2894975 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Emergency Care</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/medical-record_4914828 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Document Manage</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/doctor_709094 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Bluespier Theater</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/medical-result_2804593 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Reporting</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <!-- Repeat the above <li> for more dropdowns -->
+            </ul>
+        </aside>
+        <div class="mobile-menu">
+            <div class="menu-header">
+                <h1>Smart Hospital</h1>
+                <i class="fa-solid fa-arrow-left close-mobile-menu"></i>
+            </div>
+            <div class="menu-links-main">
+                <ul class="menu-links">
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Billing Appoinment</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Appointments</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>OPD Out-Patient</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>IPD In patient</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Pharmacy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Pathology</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Radiology</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Blood Bank</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Ambulance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Front Office</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Birth & Date Record</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Human Resource</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Referrals</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>TPA Management</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Finance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Messages</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <main class="main-content">
+            <header class="topbar">
+                <div class="mobile-togler">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="user-profile">
+                    <div class="notification">
+                        <img src="assets/images/Vector (7).png" alt="">
+                        <span>0</span>
+                    </div>
+                    <div class="profile-pic">
+
+                        <img src="assets/images/Photo.png" alt="User">
+                    </div>
+                    <div class="dropdow-main">
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Sub-link 1</a></li>
+                        <li><a href="#">Sub-link 2</a></li>
+                        <li><a href="#">Sub-link 3</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="content">
+                <div class="container-fluid">
+
+
+                    <div class="row">
+                        <div class="col-lg-8 col-12">
+                            <div class="calendar-container">
+                                <div class="calendar-header">
+                                    <div class="calendar-header-content">
+
+                                        <span id="monthYear">January 2023</span>
+                                        <button id="prevMonth">&lt;</button>
+                                        <button id="nextMonth">&gt;</button>
+                                    </div>
+                                    <div class="createAppointment-Btnmain">
+
+                                        <button id="createAppointment" class="createAppointmentBtn">Create
+                                            Appointment</button>
+                                    </div>
+                                </div>
+                                <div class="calendar" id="calendar"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="schedule-cards-main">
+
+                                <h6>Upcoming Schedule</h6>
+                                <p>Your Upcoming Schedule with Patient</p>
+                                <div class="row mt-3 gy-3">
+                                    <div class="col-12">
+                                        <div class="schedule-card">
+                                            <div class="shedule-card-profile">
+                                                <div class="schedule-card-profile-image">
+                                                    <img src="assets/images/23cfad77518a87ed584fd876f15475f1.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="schedule-card-profile-content">
+                                                    <p>John David</p>
+                                                    <span>Toronto, Canada</span>
+                                                </div>
+                                            </div>
+                                            <div class="schedule-card-col">
+                                                <p>Time</p>
+                                                <span>Tuesday, 08 March 2023 <img src="assets/images/Ellipse 971.png"
+                                                        alt=""> 11am - 12pm</span>
+                                            </div>
+                                            <div class="schedule-card-col">
+                                                <p>Services</p>
+                                                <span>Mental Health</span>
+                                            </div>
+                                            <div class="schedule-card-col">
+                                                <p>Notes</p>
+                                                <span>Hi doc, I want mental health consultation.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="schedule-card">
+                                            <div class="shedule-card-profile">
+                                                <div class="schedule-card-profile-image">
+                                                    <img src="assets/images/Rectangle 1107.png" alt="">
+                                                </div>
+                                                <div class="schedule-card-profile-content">
+                                                    <p>John David</p>
+                                                    <span>Toronto, Canada</span>
+                                                </div>
+                                            </div>
+                                            <div class="schedule-card-col">
+                                                <p>Time</p>
+                                                <span>Tuesday, 08 March 2023 <img src="assets/images/Ellipse 971.png"
+                                                        alt=""> 11am - 12pm</span>
+                                            </div>
+                                            <div class="schedule-card-col">
+                                                <p>Services</p>
+                                                <span>Mental Health</span>
+                                            </div>
+                                            <div class="schedule-card-col">
+                                                <p>Notes</p>
+                                                <span>Hi doc, I want mental health consultation.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="create-appoin-main">
+                    <div class="create-appoinment">
+                        <div class="create-appoinment-header">
+                            <h6>Create Appointment </h6>
+                            <i class="fa-solid fa-xmark create-appoin-closetBtn"></i>
+                        </div>
+                        <hr>
+                        <div class="create-apppoinment-feilds">
+                            <label for="">Patient Name</label>
+                            <input type="text" name="" placeholder="John Dave" id="">
+                            <label for="">Staff Name</label>
+                            <input type="text" name="" placeholder="Stave Harvy" id="">
+                            <label for="">Select Date</label>
+                            <input type="date" name="" id="">
+                            <label for="">Select Time</label>
+                            <input type="time" name="" id="">
+                            <label for="">Speciality</label>
+                            <div class="dropdown-container">
+                                <select id="status">
+                                    <option value="status-change">PRH Ward 14 Gynecology</option>
+                                    <option value="status-1">Status 1</option>
+                                    <option value="status-2">Status 2</option>
+                                    <option value="status-3">Status 3</option>
+                                </select>
+                            </div>
+                            <div class="create-appointment-Btnmain">
+                                <button class="create-appoin-cancelBtn">Cancel</button>
+                                <button>Save</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <!-- <div class="tab-main">
+          <i class="fa-regular fa-circle"></i>
+          <p>Dashboard</p>
+      </div> -->
+    </div>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- swiper end -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.js."></script>
+    <script src="assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+    <script>
+
+        // celender js 
+        const calendar = document.getElementById('calendar');
+        const monthYear = document.getElementById('monthYear');
+        const prevMonthBtn = document.getElementById('prevMonth');
+        const nextMonthBtn = document.getElementById('nextMonth');
+        const createAppointmentBtn = document.getElementById('createAppointment');
+
+        const appointments = {
+            '2023-01-03': '11am - 12pm<br>John David<br>Health Care',
+            '2023-01-05': '11am - 12pm<br>John David<br>Health Care'
+        };
+
+        let currentDate = new Date(2023, 0, 1);
+
+        function renderCalendar(date) {
+            const year = date.getFullYear();
+            const month = date.getMonth();
+            const firstDayOfMonth = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+            const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+            let calendarHTML = '';
+
+            for (let i = 0; i < firstDayOfMonth; i++) {
+                calendarHTML += `<div class="date-container"></div>`;
+            }
+
+            for (let i = 1; i <= daysInMonth; i++) {
+                const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(i).padStart(2, '0')}`;
+                const appointmentInfo = appointments[dateStr] || '';
+                const dayOfWeek = daysOfWeek[new Date(year, month, i).getDay()];
+                calendarHTML += `
+                    <div class="date-container" data-info="${appointmentInfo}">
+                        <div class="day">${dayOfWeek}</div>
+                        <div class="date"> 
+                            <p>${i}</p>
+                            <span>11am - 12pm</span>
+                            <p>John David</p>
+                            <span>Health Care</span>
+                         </div>
+                        
+                    </div>
+                `;
+            }
+
+            calendar.innerHTML = calendarHTML;
+            monthYear.textContent = `${date.toLocaleString('default', { month: 'long' })} ${year}`;
+        }
+
+        prevMonthBtn.addEventListener('click', () => {
+            currentDate.setMonth(currentDate.getMonth() - 1);
+            renderCalendar(currentDate);
+        });
+
+        nextMonthBtn.addEventListener('click', () => {
+            currentDate.setMonth(currentDate.getMonth() + 1);
+            renderCalendar(currentDate);
+        });
+
+
+        renderCalendar(currentDate);
+
+
+    </script>
+</body>
+
+</html>

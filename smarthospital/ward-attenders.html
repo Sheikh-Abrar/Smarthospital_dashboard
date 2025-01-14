@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js?ver=6.2.2"
+        id="particle-js-js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-Box container-fluid px-0">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>Smart Hospital</h1>
+                <div class="togler-btn">
+                    <i class="fa-solid fa-angles-left"></i>
+                </div>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="dropdown active">
+                    <div class="dropdown-header">
+                        <img src="assets/images/medicine-book_9597095 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">RTT Pathways</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/checklist_medical_healthcare_pen_clipboard_clipchart_icon_142002 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Clinical Coding</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/patient_2355692 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">OutPatient</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/share_4837049 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">E-Referral Service</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/medical-mask_3304431 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Master Patient Index</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/examination_12772954 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Waiting List</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/patient_2621786 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Inpatient</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Admit Patient from MPI</a>
+                        <a href="#">Active Patient Monitoring</a>
+                        <a href="#">Pending Admission List</a>
+                        <a href="#">View Patient by Ward</a>
+                        <a href="#">Bed Availability</a>
+                        <a href="#">Ward Diary</a>
+                        <a href="#">Bed Reservation</a>
+                        <a href="#">Admission Requests</a>
+                        <a href="#">View Recent Inpatient</a>
+                        <a href="#">View Ward Attenders</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/zoom_4660956 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Casenote Tracking</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/ambulance_2894975 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Emergency Care</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/medical-record_4914828 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Document Manage</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/doctor_709094 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Bluespier Theater</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-header">
+                        <img src="assets/images/medical-result_2804593 1.png" alt="Icon" class="dropdown-icon">
+                        <span class="dropdown-text">Reporting</span>
+                        <i class="fas fa-angle-down dropdown-angle"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </li>
+                <!-- Repeat the above <li> for more dropdowns -->
+            </ul>
+        </aside>
+        <div class="mobile-menu">
+            <div class="menu-header">
+                <h1>Smart Hospital</h1>
+                <i class="fa-solid fa-arrow-left close-mobile-menu"></i>
+            </div>
+            <div class="menu-links-main">
+                <ul class="menu-links">
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Billing Appoinment</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Appointments</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>OPD Out-Patient</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>IPD In patient</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Pharmacy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Pathology</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Radiology</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Blood Bank</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Ambulance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Front Office</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Birth & Date Record</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Human Resource</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Referrals</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>TPA Management</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Finance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Vector (8).png" alt="">
+                            <span>Messages</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <main class="main-content">
+            <header class="topbar">
+                <div class="mobile-togler">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="user-profile">
+                    <div class="notification">
+                        <img src="assets/images/Vector (7).png" alt="">
+                        <span>0</span>
+                    </div>
+                    <div class="profile-pic">
+
+                        <img src="assets/images/Photo.png" alt="User">
+                    </div>
+                    <div class="dropdow-main">
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Sub-link 1</a></li>
+                        <li><a href="#">Sub-link 2</a></li>
+                        <li><a href="#">Sub-link 3</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="content">
+
+                <div class="ward-attenders-info-main">
+                    <div class="ward-attenders-info">
+                        <div class="recent-inpateint-info-user">
+                            <img src="assets/images/Group 1261153068.png" alt="">
+                            <p>Davies, Sally (Mrs)</p>
+                        </div>
+                        <p>Gender: <span>Female</span> Born: <span>01-Apr-1977 (47Y)</span></p>
+                        <p>Address: <span>68 Meadow Road, NEWPORT, SHOPSHIRE, TF10 7TH</span></p>
+
+                    </div>
+
+                    <div class="hospital-info">
+                        <p>Hospital Number: <span>559910</span></p>
+                        <p>NHS Number: <span>604 892 1225 (01)</span></p>
+                    </div>
+                </div>
+
+
+                <div class="ward-attenders-table-sec">
+                    <h6>Ward Attenders</h6>
+                    <div class="ward-attenders-filter-sec">
+                        <div class="dropdown-container">
+                            <select id="status">
+                                <option value="status-change">WAT PRH History</option>
+                                <option value="status-1">Status 1</option>
+                                <option value="status-2">Status 2</option>
+                                <option value="status-3">Status 3</option>
+                            </select>
+                        </div>
+                        <div class="dropdown-container">
+                            <select id="status">
+                                <option value="status-change">Surname</option>
+                                <option value="status-1">Status 1</option>
+                                <option value="status-2">Status 2</option>
+                                <option value="status-3">Status 3</option>
+                            </select>
+                        </div>
+                        <button class="">View all</button>
+                    </div>
+
+                    <div class="table-wrapper">
+                        <table class="discharge-table">
+                            <thead>
+                                <tr>
+                                    <th>Patient Name</th>
+                                    <th>Local ID</th>
+                                    <th>National ID</th>
+                                    <th>Gender</th>
+                                    <th>DOB</th>
+                                    <th>Consultant</th>
+                                    <th>Specialty</th>
+                                    <th>Appoinment Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Prole. Huw (Mr)</td>
+                                    <td>403795</td>
+                                    <td>607 068 3331</td>
+                                    <td>Female</td>
+                                    <td>19-Jan-1980 </td>
+                                    <td>Nurse, N (Unknown)</td>
+                                    <td>Gynaecology</td>
+                                    <td>22-Mar-2024 12:08</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Prole. Huw (Mr)</td>
+                                    <td>403795</td>
+                                    <td>607 068 3331</td>
+                                    <td>Female</td>
+                                    <td>19-Jan-1980 </td>
+                                    <td>Nurse, N (Unknown)</td>
+                                    <td>Gynaecology</td>
+                                    <td>22-Mar-2024 12:08</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Prole. Huw (Mr)</td>
+                                    <td>403795</td>
+                                    <td>607 068 3331</td>
+                                    <td>Female</td>
+                                    <td>19-Jan-1980 </td>
+                                    <td>Nurse, N (Unknown)</td>
+                                    <td>Gynaecology</td>
+                                    <td>22-Mar-2024 12:08</td>
+                                </tr>
+                                <tr>
+                                    <td>Prole. Huw (Mr)</td>
+                                    <td>403795</td>
+                                    <td>607 068 3331</td>
+                                    <td>Female</td>
+                                    <td>19-Jan-1980 </td>
+                                    <td>Nurse, N (Unknown)</td>
+                                    <td>Gynaecology</td>
+                                    <td>22-Mar-2024 12:08</td>
+                                </tr>
+                                <tr>
+                                    <td>Prole. Huw (Mr)</td>
+                                    <td>403795</td>
+                                    <td>607 068 3331</td>
+                                    <td>Female</td>
+                                    <td>19-Jan-1980 </td>
+                                    <td>Nurse, N (Unknown)</td>
+                                    <td>Gynaecology</td>
+                                    <td>22-Mar-2024 12:08</td>
+                                </tr>
+                                <tr>
+                                    <td>Prole. Huw (Mr)</td>
+                                    <td>403795</td>
+                                    <td>607 068 3331</td>
+                                    <td>Female</td>
+                                    <td>19-Jan-1980 </td>
+                                    <td>Nurse, N (Unknown)</td>
+                                    <td>Gynaecology</td>
+                                    <td>22-Mar-2024 12:08</td>
+                                </tr>
+                                <tr>
+                                    <td>Prole. Huw (Mr)</td>
+                                    <td>403795</td>
+                                    <td>607 068 3331</td>
+                                    <td>Female</td>
+                                    <td>19-Jan-1980 </td>
+                                    <td>Nurse, N (Unknown)</td>
+                                    <td>Gynaecology</td>
+                                    <td>22-Mar-2024 12:08</td>
+                                </tr>
+                                <tr>
+                                    <td>Prole. Huw (Mr)</td>
+                                    <td>403795</td>
+                                    <td>607 068 3331</td>
+                                    <td>Female</td>
+                                    <td>19-Jan-1980 </td>
+                                    <td>Nurse, N (Unknown)</td>
+                                    <td>Gynaecology</td>
+                                    <td>22-Mar-2024 12:08</td>
+                                </tr>
+                                <tr>
+                                    <td>Prole. Huw (Mr)</td>
+                                    <td>403795</td>
+                                    <td>607 068 3331</td>
+                                    <td>Female</td>
+                                    <td>19-Jan-1980 </td>
+                                    <td>Nurse, N (Unknown)</td>
+                                    <td>Gynaecology</td>
+                                    <td>22-Mar-2024 12:08</td>
+                                </tr>
+                                <tr>
+                                    <td>Prole. Huw (Mr)</td>
+                                    <td>403795</td>
+                                    <td>607 068 3331</td>
+                                    <td>Female</td>
+                                    <td>19-Jan-1980 </td>
+                                    <td>Nurse, N (Unknown)</td>
+                                    <td>Gynaecology</td>
+                                    <td>22-Mar-2024 12:08</td>
+                                </tr>
+                                <tr>
+                                    <td>Prole. Huw (Mr)</td>
+                                    <td>403795</td>
+                                    <td>607 068 3331</td>
+                                    <td>Female</td>
+                                    <td>19-Jan-1980 </td>
+                                    <td>Nurse, N (Unknown)</td>
+                                    <td>Gynaecology</td>
+                                    <td>22-Mar-2024 12:08</td>
+                                </tr>
+                                <tr>
+                                    <td>Prole. Huw (Mr)</td>
+                                    <td>403795</td>
+                                    <td>607 068 3331</td>
+                                    <td>Female</td>
+                                    <td>19-Jan-1980 </td>
+                                    <td>Nurse, N (Unknown)</td>
+                                    <td>Gynaecology</td>
+                                    <td>22-Mar-2024 12:08</td>
+                                </tr>
+                                <tr>
+                                    <td>Prole. Huw (Mr)</td>
+                                    <td>403795</td>
+                                    <td>607 068 3331</td>
+                                    <td>Female</td>
+                                    <td>19-Jan-1980 </td>
+                                    <td>Nurse, N (Unknown)</td>
+                                    <td>Gynaecology</td>
+                                    <td>22-Mar-2024 12:08</td>
+                                </tr>
+                                <tr>
+                                    <td>Prole. Huw (Mr)</td>
+                                    <td>403795</td>
+                                    <td>607 068 3331</td>
+                                    <td>Female</td>
+                                    <td>19-Jan-1980 </td>
+                                    <td>Nurse, N (Unknown)</td>
+                                    <td>Gynaecology</td>
+                                    <td>22-Mar-2024 12:08</td>
+                                </tr>
+
+
+
+                                <!-- Repeat the <tr> block for each additional row as needed -->
+                                <!-- Add more rows here to demonstrate scrolling -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <!-- Popup structure -->
+                <!-- Popup structure -->
+                <div id="popup" class="popup" style="left: 480.844px !important;">
+                    <div class="popup-content">
+                        <ul>
+                            <li>Add Ward Attendence</li>
+                            <li class="view-attender-popup">Edit Ward Attendence</li>
+                            <li class="view-outcome-popup">Outcome Ward Attendance</li>
+                            <li>Remove Attendance</li>
+                            <li>Save Grid Layout for Filter</li>
+                            <li>View Clinical Notes</li>
+                            <li>Print Grid</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- all attendence popup -->
+                <div class="attenders-popup-detail-main">
+                    <div class="attenders-popup-detail">
+                        <div class="attenders-popup-detail-head">
+                            <h6>Attenders Details </h6>
+                            <i class="fa-solid fa-xmark attender-detail-CloseBTn"></i>
+                        </div>
+                        <hr>
+                        <div class="attenders-popup-detail-form">
+                            <div class="attender-detail-popup-info-main">
+                                <div class="attender-detail-popup-info">
+                                    <div class="attender-detail-popup-info-col">
+                                        <div class="attender-detail-popup-info-col-child">
+
+                                            <img src="assets/images/Group 1261153068.png" alt="">
+                                            <p>Davies, Sally (Mrs)</p>
+                                        </div>
+                                        <p><span>Female</span> - <span>01-Apr-1977</span> - <span>936222</span></p>
+                                    </div>
+                                    <div class="custom-search-container">
+                                        <input type="text" class="custom-search-input"
+                                            placeholder="Enter patient search criteria here">
+                                        <div class="custom-search-icon"><i class="fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="attenders-popup-detail-feilds">
+                                <div class="row">
+                                    <h6>Attendance Details</h6>
+                                    <div class="col-12">
+                                        <div class="attenders-popup-detail-form-col">
+                                            <div class="attenders-popup-detail-form-col-child">
+                                                <label for="">Start Date</label>
+                                                <input type="date" name="" id="">
+                                            </div>
+                                            <div class="attenders-popup-detail-form-col-child">
+                                                <label for="">Expected End Time</label>
+                                                <input type="time" name="" id="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Ward</label>
+                                        <div class="dropdown-container">
+                                            <select id="status">
+                                                <option value="status-change">PRH Ward 14 Gynecology</option>
+                                                <option value="status-1">Status 1</option>
+                                                <option value="status-2">Status 2</option>
+                                                <option value="status-3">Status 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Overseas Visitor Status</label>
+                                        <div class="dropdown-container">
+                                            <select id="status">
+                                                <option value="status-change">Standard NHS</option>
+                                                <option value="status-1">Status 1</option>
+                                                <option value="status-2">Status 2</option>
+                                                <option value="status-3">Status 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Admin Category</label>
+                                        <div class="dropdown-container">
+                                            <select id="status">
+                                                <option value="status-change">NHS Patient</option>
+                                                <option value="status-1">Status 1</option>
+                                                <option value="status-2">Status 2</option>
+                                                <option value="status-3">Status 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Transport</label>
+                                        <div class="dropdown-container">
+                                            <select id="status">
+                                                <option value="status-change">NHS Patient</option>
+                                                <option value="status-1">Status 1</option>
+                                                <option value="status-2">Status 2</option>
+                                                <option value="status-3">Status 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">First Contact</label>
+                                        <div class="dropdown-container">
+                                            <select id="status">
+                                                <option value="status-change">NHS Patient</option>
+                                                <option value="status-1">Status 1</option>
+                                                <option value="status-2">Status 2</option>
+                                                <option value="status-3">Status 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Referred by </label>
+                                        <div class="dropdown-container">
+                                            <select id="status">
+                                                <option value="status-change">Post Admission</option>
+                                                <option value="status-1">Status 1</option>
+                                                <option value="status-2">Status 2</option>
+                                                <option value="status-3">Status 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Clinician</label>
+                                        <div class="dropdown-container">
+                                            <select id="status">
+                                                <option value="status-change">Nurse, N</option>
+                                                <option value="status-1">Status 1</option>
+                                                <option value="status-2">Status 2</option>
+                                                <option value="status-3">Status 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Assessment </label>
+                                        <div class="dropdown-container">
+                                            <select id="status">
+                                                <option value="status-change">Urgent</option>
+                                                <option value="status-1">Status 1</option>
+                                                <option value="status-2">Status 2</option>
+                                                <option value="status-3">Status 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Second Openion </label>
+                                        <div class="dropdown-container">
+                                            <select id="status">
+                                                <option value="status-change">No</option>
+                                                <option value="status-1">Status 1</option>
+                                                <option value="status-2">Status 2</option>
+                                                <option value="status-3">Status 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Speciality </label>
+                                        <div class="dropdown-container">
+                                            <select id="status">
+                                                <option value="status-change">Gaynaecology</option>
+                                                <option value="status-1">Status 1</option>
+                                                <option value="status-2">Status 2</option>
+                                                <option value="status-3">Status 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Attendence </label>
+                                        <div class="dropdown-container">
+                                            <select id="status">
+                                                <option value="status-change">FUP</option>
+                                                <option value="status-1">Status 1</option>
+                                                <option value="status-2">Status 2</option>
+                                                <option value="status-3">Status 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Reason for Attendence </label>
+                                        <div class="dropdown-container">
+                                            <select id="status">
+                                                <option value="status-change"></option>
+                                                <option value="status-1">Status 1</option>
+                                                <option value="status-2">Status 2</option>
+                                                <option value="status-3">Status 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Escord Record </label>
+                                        <div class="dropdown-container">
+                                            <select id="status">
+                                                <option value="status-change">No</option>
+                                                <option value="status-1">Status 1</option>
+                                                <option value="status-2">Status 2</option>
+                                                <option value="status-3">Status 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="attenders-popup-detail-BTnmain mt-0">
+                            <button class="attender-detail-CloseBTn">Cancel</button>
+                            <button>Save</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="outcome-attender-popup-main">
+                    <div class="attenders-popup-detail">
+                        <div class="attenders-popup-detail-head">
+                            <h6>Attenders Details </h6>
+                            <i class="fa-solid fa-xmark outcome-popup-CloseBTn"></i>
+                        </div>
+                        <hr>
+                        <div class="attenders-popup-detail-form">
+                            <div class="attender-detail-popup-info-main">
+                                <div class="attender-detail-popup-info">
+                                    <div class="attender-detail-popup-info-col">
+                                        <div class="attender-detail-popup-info-col-child">
+
+                                            <img src="assets/images/Group 1261153068.png" alt="">
+                                            <p>Davies, Sally (Mrs)</p>
+                                        </div>
+                                        <p><span>Female</span> - <span>01-Apr-1977</span> - <span>936222</span></p>
+                                    </div>
+                                    <div class="custom-search-container">
+                                        <input type="text" class="custom-search-input" placeholder="Enter patient search criteria here">
+                                        <div class="custom-search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="attenders-popup-detail-feilds">
+                                <div class="row">
+                                    <h6>Attendance Outcome</h6>
+                                    <div class="col-12">
+                                        <div class="attenders-popup-detail-form-col">
+                                            <div class="attenders-popup-detail-form-col-child">
+                                                <label for="">Completed Date</label>
+                                                <input type="date" name="" id="">
+                                            </div>
+                                            <div class="attenders-popup-detail-form-col-child">
+                                                <label for="">Time</label>
+                                                <input type="time" name="" id="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Consultation Medium</label>
+                                        <div class="dropdown-container">
+                                            <select id="status">
+                                                <option value="status-change">Face to Face Communication</option>
+                                                <option value="status-1">Status 1</option>
+                                                <option value="status-2">Status 2</option>
+                                                <option value="status-3">Status 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Outcome</label>
+                                        <div class="dropdown-container">
+                                            <select id="status">
+                                                <option value="status-change">Discharge Patient</option>
+                                                <option value="status-1">Status 1</option>
+                                                <option value="status-2">Status 2</option>
+                                                <option value="status-3">Status 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Seen by</label>
+                                        <div class="dropdown-container">
+                                            <select id="status">
+                                                <option value="status-change">Nurse, N</option>
+                                                <option value="status-1">Status 1</option>
+                                                <option value="status-2">Status 2</option>
+                                                <option value="status-3">Status 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Role</label>
+                                        <div class="dropdown-container">
+                                            <select id="status">
+                                                <option value="status-change">Outpatient Appoinment Seen by</option>
+                                                <option value="status-1">Status 1</option>
+                                                <option value="status-2">Status 2</option>
+                                                <option value="status-3">Status 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 pateint-checkbox-main">
+                                        <div style="display: flex; align-items: center;">
+                                            <input type="checkbox" style="width: 25px;" name="" id="">
+                                            <label for="" style="margin: 0;">Remote Monitering</label>
+                                        </div>
+                                        <div style="display: flex; align-items: center;">
+                                            <input type="checkbox" style="width: 25px;" name="" id="">
+                                            <label for="" style="margin: 0;">patient Initiated Followup</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Earliest Clinically Appropriate Date</label>
+                                        <input type="date" name="" id="">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Latest Clinically Appropriate Date</label>
+                                        <input type="date" name="" id="">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Review Date</label>
+                                        <input type="date" name="" id="">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Personalized OP Followup Expiry Date</label>
+                                        <input type="date" name="" id="">
+                                    </div>
+                                    <div class="attenders-popup-detail-BTnmain">
+                                        <button class="outcome-popup-CloseBTn">Cancel</button>
+                                        <button>Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                      
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+            <div class="ward-attenders-btnmain">
+                <button>Save</button>
+            </div>
+        </main>
+        <!-- <div class="tab-main">
+          <i class="fa-regular fa-circle"></i>
+          <p>Dashboard</p>
+      </div> -->
+    </div>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- swiper end -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.js."></script>
+    <script src="assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+    <script>
+        // update confirmation 
+        $(document).on("click", '.view-attender-popup', function () {
+            $('.attenders-popup-detail-main').addClass('active');
+        });
+
+        $(document).on("click", '.attender-detail-CloseBTn', function () {
+            $('.attenders-popup-detail-main').removeClass('active');
+        });
+        // outcome attenders popup main 
+        $(document).on("click", '.view-outcome-popup', function () {
+            $('.outcome-attender-popup-main').addClass('active');
+        });
+
+        $(document).on("click", '.outcome-popup-CloseBTn', function () {
+            $('.outcome-attender-popup-main').removeClass('active');
+        });
+
+    </script>
+</body>
+
+</html>
